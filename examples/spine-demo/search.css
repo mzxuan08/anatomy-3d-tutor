@@ -1,0 +1,1 @@
+.search-box{margin-top:20px}.search-box input{display:block;width:100%;font:inherit;font-size:12px;padding:10px 11px;border:1px solid #dbe5e7;border-radius:8px;margin-top:7px;color:#324d55;background:#fafcfb}.search-box:has(input:disabled){opacity:.55}#search-results{max-height:240px;overflow:auto}#search-results p{font-size:11px;color:#71847b;margin:8px 0}

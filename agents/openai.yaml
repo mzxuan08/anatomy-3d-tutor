@@ -1,0 +1,4 @@
+interface:
+  display_name: "系统解剖学 3D 伴学"
+  short_description: "结合课件和三维模型，解答结构、空间关系及辨认记忆中的难点"
+  default_prompt: "用 $anatomy-3d-tutor 结合我的课件和三维模型，带我理解这个部位，并通过指认帮助我记住。"

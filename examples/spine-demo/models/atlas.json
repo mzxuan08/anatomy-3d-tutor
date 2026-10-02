@@ -1,0 +1,813 @@
+{
+  "sex": "male",
+  "source": "BodyParts3D",
+  "scope": "Adult male reference anatomy · 2,234 source meshes",
+  "parts": [
+    {
+      "id": "FJ3154",
+      "name": "Tenth thoracic vertebra",
+      "conceptId": "FMA10037",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 0,
+      "normals": 15012,
+      "indices": 22520,
+      "vertexCount": 1251,
+      "indexCount": 6480,
+      "bounds": [
+        [
+          -0.0336568,
+          1.1778811999999999,
+          -0.09217750000000001
+        ],
+        [
+          0.032245199999999995,
+          1.2352412000000002,
+          -0.015942200000000004
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Tenth thoracic vertebra",
+        "zh": "第十胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3155",
+      "name": "Eleventh thoracic vertebra",
+      "conceptId": "FMA10059",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 48440,
+      "normals": 63296,
+      "indices": 70724,
+      "vertexCount": 1238,
+      "indexCount": 6018,
+      "bounds": [
+        [
+          -0.026761,
+          1.1538312,
+          -0.0869911
+        ],
+        [
+          0.0255593,
+          1.2073812,
+          -0.007467600000000005
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Eleventh thoracic vertebra",
+        "zh": "第十一胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3156",
+      "name": "Twelfth thoracic vertebra",
+      "conceptId": "FMA10081",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 94796,
+      "normals": 109532,
+      "indices": 116900,
+      "vertexCount": 1228,
+      "indexCount": 6186,
+      "bounds": [
+        [
+          -0.022386399999999997,
+          1.1280712,
+          -0.07743910000000001
+        ],
+        [
+          0.021054800000000002,
+          1.1797011999999998,
+          0.0013849999999999973
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Twelfth thoracic vertebra",
+        "zh": "第十二胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3157",
+      "name": "First lumbar vertebra",
+      "conceptId": "FMA13072",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 141644,
+      "normals": 158336,
+      "indices": 166684,
+      "vertexCount": 1391,
+      "indexCount": 7212,
+      "bounds": [
+        [
+          -0.0357798,
+          1.0933112,
+          -0.0707776
+        ],
+        [
+          0.034461399999999996,
+          1.1500911999999999,
+          0.009480000000000002
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "First lumbar vertebra",
+        "zh": "第一腰椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3158",
+      "name": "First thoracic vertebra",
+      "conceptId": "FMA9165",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 195532,
+      "normals": 206512,
+      "indices": 212004,
+      "vertexCount": 915,
+      "indexCount": 4194,
+      "bounds": [
+        [
+          -0.037383000000000007,
+          1.4253312,
+          -0.08291330000000001
+        ],
+        [
+          0.0359162,
+          1.4550112,
+          -0.013128100000000004
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "First thoracic vertebra",
+        "zh": "第一胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3159",
+      "name": "Second lumbar vertebra",
+      "conceptId": "FMA13073",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 228780,
+      "normals": 246696,
+      "indices": 255656,
+      "vertexCount": 1493,
+      "indexCount": 7476,
+      "bounds": [
+        [
+          -0.0403509,
+          1.0704272000000001,
+          -0.0656512
+        ],
+        [
+          0.0390608,
+          1.1178712,
+          0.014719999999999997
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Second lumbar vertebra",
+        "zh": "第二腰椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3160",
+      "name": "Second thoracic vertebra",
+      "conceptId": "FMA9187",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 285560,
+      "normals": 297140,
+      "indices": 302932,
+      "vertexCount": 965,
+      "indexCount": 4710,
+      "bounds": [
+        [
+          -0.0359221,
+          1.4047011999999999,
+          -0.0878795
+        ],
+        [
+          0.0345784,
+          1.4384712,
+          -0.017324200000000012
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Second thoracic vertebra",
+        "zh": "第二胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3161",
+      "name": "Third cervical vertebra",
+      "conceptId": "FMA12521",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 321772,
+      "normals": 335980,
+      "indices": 343084,
+      "vertexCount": 1184,
+      "indexCount": 5298,
+      "bounds": [
+        [
+          -0.029842800000000003,
+          1.4951112,
+          -0.0618669
+        ],
+        [
+          0.0285393,
+          1.5238512,
+          -0.012186800000000012
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Third cervical vertebra",
+        "zh": "第三颈椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3162",
+      "name": "Third lumbar vertebra",
+      "conceptId": "FMA13074",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 364276,
+      "normals": 381316,
+      "indices": 389836,
+      "vertexCount": 1420,
+      "indexCount": 7362,
+      "bounds": [
+        [
+          -0.0402029,
+          1.0458042,
+          -0.07048600000000001
+        ],
+        [
+          0.038841,
+          1.0878412,
+          0.015352999999999992
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Third lumbar vertebra",
+        "zh": "第三腰椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3163",
+      "name": "Third thoracic vertebra",
+      "conceptId": "FMA9209",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 419284,
+      "normals": 431248,
+      "indices": 437232,
+      "vertexCount": 997,
+      "indexCount": 5088,
+      "bounds": [
+        [
+          -0.0329661,
+          1.3803412,
+          -0.09863989000000001
+        ],
+        [
+          0.031840900000000005,
+          1.4199612,
+          -0.0232637
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Third thoracic vertebra",
+        "zh": "第三胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3164",
+      "name": "Fourth cervical vertebra",
+      "conceptId": "FMA12522",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 457584,
+      "normals": 473040,
+      "indices": 480768,
+      "vertexCount": 1288,
+      "indexCount": 6186,
+      "bounds": [
+        [
+          -0.0277534,
+          1.4827111999999998,
+          -0.0593064
+        ],
+        [
+          0.0263775,
+          1.5102512000000001,
+          -0.01089190000000001
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Fourth cervical vertebra",
+        "zh": "第四颈椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3165",
+      "name": "Fourth lumbar vertebra",
+      "conceptId": "FMA13075",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 505512,
+      "normals": 523548,
+      "indices": 532568,
+      "vertexCount": 1503,
+      "indexCount": 7890,
+      "bounds": [
+        [
+          -0.0427661,
+          1.0167752,
+          -0.07384380000000001
+        ],
+        [
+          0.0414154,
+          1.0615132,
+          0.010404999999999998
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Fourth lumbar vertebra",
+        "zh": "第四腰椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3166",
+      "name": "Fourth thoracic vertebra",
+      "conceptId": "FMA9248",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 564128,
+      "normals": 576176,
+      "indices": 582200,
+      "vertexCount": 1004,
+      "indexCount": 5052,
+      "bounds": [
+        [
+          -0.0354617,
+          1.3558512,
+          -0.099802104
+        ],
+        [
+          0.034282,
+          1.3995212000000001,
+          -0.030395100000000008
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Fourth thoracic vertebra",
+        "zh": "第四胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3167",
+      "name": "Fifth cervical vertebra",
+      "conceptId": "FMA12523",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 602408,
+      "normals": 619160,
+      "indices": 627536,
+      "vertexCount": 1396,
+      "indexCount": 5802,
+      "bounds": [
+        [
+          -0.0296978,
+          1.4718812,
+          -0.0639175
+        ],
+        [
+          0.028333200000000003,
+          1.4961012,
+          -0.00922740000000001
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Fifth cervical vertebra",
+        "zh": "第五颈椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3168",
+      "name": "Fifth lumbar vertebra",
+      "conceptId": "FMA13076",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 650744,
+      "normals": 668372,
+      "indices": 677188,
+      "vertexCount": 1469,
+      "indexCount": 7920,
+      "bounds": [
+        [
+          -0.0510007,
+          0.9827062000000001,
+          -0.08175500000000001
+        ],
+        [
+          0.0495736,
+          1.0329442,
+          -0.0009235000000000076
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Fifth lumbar vertebra",
+        "zh": "第五腰椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3169",
+      "name": "Fifth thoracic vertebra",
+      "conceptId": "FMA9922",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 708868,
+      "normals": 721936,
+      "indices": 728472,
+      "vertexCount": 1089,
+      "indexCount": 5496,
+      "bounds": [
+        [
+          -0.036151499999999996,
+          1.3178812,
+          -0.1000185499
+        ],
+        [
+          0.034889699999999996,
+          1.3753811999999999,
+          -0.03399100000000001
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Fifth thoracic vertebra",
+        "zh": "第五胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3170",
+      "name": "Sixth cervical vertebra",
+      "conceptId": "FMA12524",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 750456,
+      "normals": 765540,
+      "indices": 773084,
+      "vertexCount": 1257,
+      "indexCount": 5784,
+      "bounds": [
+        [
+          -0.0312652,
+          1.4597011999999998,
+          -0.07082060000000001
+        ],
+        [
+          0.0299477,
+          1.4828512,
+          -0.008329000000000003
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Sixth cervical vertebra",
+        "zh": "第六颈椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3171",
+      "name": "Sixth thoracic vertebra",
+      "conceptId": "FMA9945",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 796220,
+      "normals": 809744,
+      "indices": 816508,
+      "vertexCount": 1127,
+      "indexCount": 5490,
+      "bounds": [
+        [
+          -0.0364227,
+          1.2874912,
+          -0.09880757000000001
+        ],
+        [
+          0.03503390000000001,
+          1.3471912,
+          -0.03477910000000001
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Sixth thoracic vertebra",
+        "zh": "第六胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3172",
+      "name": "Seventh cervical vertebra",
+      "conceptId": "FMA12525",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 838468,
+      "normals": 852412,
+      "indices": 859384,
+      "vertexCount": 1162,
+      "indexCount": 4560,
+      "bounds": [
+        [
+          -0.0332293,
+          1.4428212,
+          -0.0787336
+        ],
+        [
+          0.0319316,
+          1.4699512,
+          -0.009968100000000008
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Seventh cervical vertebra",
+        "zh": "第七颈椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3173",
+      "name": "Seventh thoracic vertebra",
+      "conceptId": "FMA9968",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 877624,
+      "normals": 892300,
+      "indices": 899640,
+      "vertexCount": 1223,
+      "indexCount": 6282,
+      "bounds": [
+        [
+          -0.037226300000000004,
+          1.2574112,
+          -0.09932850700000001
+        ],
+        [
+          0.0363206,
+          1.3199112,
+          -0.0330208
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Seventh thoracic vertebra",
+        "zh": "第七胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3174",
+      "name": "Eighth thoracic vertebra",
+      "conceptId": "FMA9991",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 924768,
+      "normals": 939108,
+      "indices": 946280,
+      "vertexCount": 1195,
+      "indexCount": 6144,
+      "bounds": [
+        [
+          -0.0336594,
+          1.2318612,
+          -0.099068204
+        ],
+        [
+          0.032152700000000006,
+          1.2911612,
+          -0.027972399999999994
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Eighth thoracic vertebra",
+        "zh": "第八胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3175",
+      "name": "Ninth thoracic vertebra",
+      "conceptId": "FMA10014",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 970856,
+      "normals": 984692,
+      "indices": 991612,
+      "vertexCount": 1153,
+      "indexCount": 6120,
+      "bounds": [
+        [
+          -0.034394799999999996,
+          1.2047412000000002,
+          -0.09384394
+        ],
+        [
+          0.032998,
+          1.2629511999999998,
+          -0.022347099999999995
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "Ninth thoracic vertebra",
+        "zh": "第九胸椎",
+        "status": "derived",
+        "rule": "课件分部与编号＋原始英文序数",
+        "source": "用户躯干骨课件，PDF第7、10–13页"
+      }
+    },
+    {
+      "id": "FJ3176",
+      "name": "Atlas",
+      "conceptId": "FMA12519",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 1016092,
+      "normals": 1029460,
+      "indices": 1036144,
+      "vertexCount": 1114,
+      "indexCount": 4542,
+      "bounds": [
+        [
+          -0.0413646,
+          1.5403212,
+          -0.05940420000000001
+        ],
+        [
+          0.0402307,
+          1.5595412,
+          -0.0123558
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "atlas",
+        "zh": "寰椎",
+        "status": "textbook-matched",
+        "source": "系统解剖学教材术语人工匹配；需按版本复核",
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      }
+    },
+    {
+      "id": "FJ3177",
+      "name": "Axis",
+      "conceptId": "FMA12520",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 1054312,
+      "normals": 1071208,
+      "indices": 1079656,
+      "vertexCount": 1408,
+      "indexCount": 6084,
+      "bounds": [
+        [
+          -0.0259616,
+          1.5112812,
+          -0.0633291
+        ],
+        [
+          0.0245742,
+          1.5564611999999998,
+          -0.013460899999999998
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "axis",
+        "zh": "枢椎",
+        "status": "textbook-matched",
+        "source": "系统解剖学教材术语人工匹配；需按版本复核",
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      }
+    },
+    {
+      "id": "FJ3393",
+      "name": "Sacrum",
+      "conceptId": "FMA16202",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 1103992,
+      "normals": 1137244,
+      "indices": 1153872,
+      "vertexCount": 2771,
+      "indexCount": 15174,
+      "bounds": [
+        [
+          -0.059591200000000004,
+          0.8609482,
+          -0.10725375000000001
+        ],
+        [
+          0.0582029,
+          1.0053112,
+          -0.018603599999999998
+        ]
+      ],
+      "original_system": "skeletal",
+      "terminology": {
+        "en": "sacrum",
+        "zh": "骶骨",
+        "status": "textbook-matched",
+        "source": "系统解剖学教材术语人工匹配；需按版本复核",
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "url": "models/geometry.bin",
+      "bytes": 1214568
+    }
+  ]
+}

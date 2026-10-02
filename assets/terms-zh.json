@@ -1,0 +1,1510 @@
+{
+  "scope": "常用基础术语，非全量官方双语表",
+  "records": [
+    {
+      "en": "skull",
+      "zh": "颅",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cranium",
+      "zh": "颅",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "frontal bone",
+      "zh": "额骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "parietal bone",
+      "zh": "顶骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "temporal bone",
+      "zh": "颞骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "occipital bone",
+      "zh": "枕骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sphenoid bone",
+      "zh": "蝶骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ethmoid",
+      "zh": "筛骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ethmoid bone",
+      "zh": "筛骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vomer",
+      "zh": "犁骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "maxilla",
+      "zh": "上颌骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "mandible",
+      "zh": "下颌骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "zygomatic bone",
+      "zh": "颧骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "palatine bone",
+      "zh": "腭骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "nasal bone",
+      "zh": "鼻骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "lacrimal bone",
+      "zh": "泪骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "inferior nasal concha",
+      "zh": "下鼻甲",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "hyoid bone",
+      "zh": "舌骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "atlas",
+      "zh": "寰椎",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "axis",
+      "zh": "枢椎",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sacrum",
+      "zh": "骶骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "coccyx",
+      "zh": "尾骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sternum",
+      "zh": "胸骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "manubrium",
+      "zh": "胸骨柄",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "body of sternum",
+      "zh": "胸骨体",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "xiphoid process",
+      "zh": "剑突",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "rib",
+      "zh": "肋骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "costal cartilage",
+      "zh": "肋软骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "clavicle",
+      "zh": "锁骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "scapula",
+      "zh": "肩胛骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "humerus",
+      "zh": "肱骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "radius",
+      "zh": "桡骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ulna",
+      "zh": "尺骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "scaphoid",
+      "zh": "舟骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "lunate",
+      "zh": "月骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "triquetral",
+      "zh": "三角骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pisiform",
+      "zh": "豌豆骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "trapezium",
+      "zh": "大多角骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "trapezoid",
+      "zh": "小多角骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "capitate",
+      "zh": "头状骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "hamate",
+      "zh": "钩骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "hip bone",
+      "zh": "髋骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ilium",
+      "zh": "髂骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ischium",
+      "zh": "坐骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pubis",
+      "zh": "耻骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "femur",
+      "zh": "股骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "patella",
+      "zh": "髌骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "tibia",
+      "zh": "胫骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "fibula",
+      "zh": "腓骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "talus",
+      "zh": "距骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "calcaneus",
+      "zh": "跟骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cuboid bone",
+      "zh": "骰骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "navicular bone",
+      "zh": "足舟骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "medial cuneiform bone",
+      "zh": "内侧楔骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "intermediate cuneiform bone",
+      "zh": "中间楔骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "lateral cuneiform bone",
+      "zh": "外侧楔骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vertebral column",
+      "zh": "脊柱",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vertebra",
+      "zh": "椎骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "intervertebral disk",
+      "zh": "椎间盘",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "nucleus pulposus",
+      "zh": "髓核",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "anulus fibrosus",
+      "zh": "纤维环",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ligamentum flavum",
+      "zh": "黄韧带",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "anterior longitudinal ligament",
+      "zh": "前纵韧带",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "posterior longitudinal ligament",
+      "zh": "后纵韧带",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "heart",
+      "zh": "心",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "right atrium",
+      "zh": "右心房",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "left atrium",
+      "zh": "左心房",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "right ventricle",
+      "zh": "右心室",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "left ventricle",
+      "zh": "左心室",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "aorta",
+      "zh": "主动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ascending aorta",
+      "zh": "升主动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "descending aorta",
+      "zh": "降主动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "arch of aorta",
+      "zh": "主动脉弓",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pulmonary trunk",
+      "zh": "肺动脉干",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "superior vena cava",
+      "zh": "上腔静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "inferior vena cava",
+      "zh": "下腔静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "common carotid artery",
+      "zh": "颈总动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "internal carotid artery",
+      "zh": "颈内动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "external carotid artery",
+      "zh": "颈外动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vertebral artery",
+      "zh": "椎动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "subclavian artery",
+      "zh": "锁骨下动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "axillary artery",
+      "zh": "腋动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brachial artery",
+      "zh": "肱动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "radial artery",
+      "zh": "桡动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ulnar artery",
+      "zh": "尺动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "femoral artery",
+      "zh": "股动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "popliteal artery",
+      "zh": "腘动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "common iliac artery",
+      "zh": "髂总动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "internal iliac artery",
+      "zh": "髂内动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "external iliac artery",
+      "zh": "髂外动脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "internal jugular vein",
+      "zh": "颈内静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "external jugular vein",
+      "zh": "颈外静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "subclavian vein",
+      "zh": "锁骨下静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "axillary vein",
+      "zh": "腋静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brachial vein",
+      "zh": "肱静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "femoral vein",
+      "zh": "股静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "great saphenous vein",
+      "zh": "大隐静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "small saphenous vein",
+      "zh": "小隐静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "azygos vein",
+      "zh": "奇静脉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "lung",
+      "zh": "肺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "trachea",
+      "zh": "气管",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "larynx",
+      "zh": "喉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "thyroid cartilage",
+      "zh": "甲状软骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cricoid cartilage",
+      "zh": "环状软骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "arytenoid cartilage",
+      "zh": "杓状软骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "epiglottis",
+      "zh": "会厌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "diaphragm",
+      "zh": "膈",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "nasal cavity",
+      "zh": "鼻腔",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pharynx",
+      "zh": "咽",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "esophagus",
+      "zh": "食管",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "stomach",
+      "zh": "胃",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "duodenum",
+      "zh": "十二指肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "jejunum",
+      "zh": "空肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ileum",
+      "zh": "回肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cecum",
+      "zh": "盲肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "appendix",
+      "zh": "阑尾",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vermiform appendix",
+      "zh": "阑尾",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ascending colon",
+      "zh": "升结肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "transverse colon",
+      "zh": "横结肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "descending colon",
+      "zh": "降结肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sigmoid colon",
+      "zh": "乙状结肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "rectum",
+      "zh": "直肠",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "liver",
+      "zh": "肝",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "gallbladder",
+      "zh": "胆囊",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pancreas",
+      "zh": "胰",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "spleen",
+      "zh": "脾",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "tongue",
+      "zh": "舌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "parotid gland",
+      "zh": "腮腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "submandibular gland",
+      "zh": "下颌下腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sublingual gland",
+      "zh": "舌下腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "kidney",
+      "zh": "肾",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ureter",
+      "zh": "输尿管",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "urinary bladder",
+      "zh": "膀胱",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "urethra",
+      "zh": "尿道",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "renal pelvis",
+      "zh": "肾盂",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "major calyx",
+      "zh": "肾大盏",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "minor calyx",
+      "zh": "肾小盏",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "testis",
+      "zh": "睾丸",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "epididymis",
+      "zh": "附睾",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "prostate",
+      "zh": "前列腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "seminal vesicle",
+      "zh": "精囊",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ductus deferens",
+      "zh": "输精管",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ovary",
+      "zh": "卵巢",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "uterus",
+      "zh": "子宫",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "uterine tube",
+      "zh": "输卵管",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vagina",
+      "zh": "阴道",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "thyroid gland",
+      "zh": "甲状腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "parathyroid gland",
+      "zh": "甲状旁腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "adrenal gland",
+      "zh": "肾上腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "suprarenal gland",
+      "zh": "肾上腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pituitary gland",
+      "zh": "垂体",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pineal gland",
+      "zh": "松果体",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "thymus",
+      "zh": "胸腺",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brain",
+      "zh": "脑",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cerebrum",
+      "zh": "大脑",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cerebellum",
+      "zh": "小脑",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brainstem",
+      "zh": "脑干",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "midbrain",
+      "zh": "中脑",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pons",
+      "zh": "脑桥",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "medulla oblongata",
+      "zh": "延髓",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "spinal cord",
+      "zh": "脊髓",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "optic nerve",
+      "zh": "视神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "optic chiasm",
+      "zh": "视交叉",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "oculomotor nerve",
+      "zh": "动眼神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "trigeminal nerve",
+      "zh": "三叉神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "abducent nerve",
+      "zh": "展神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "facial nerve",
+      "zh": "面神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vestibulocochlear nerve",
+      "zh": "前庭蜗神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "glossopharyngeal nerve",
+      "zh": "舌咽神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "vagus nerve",
+      "zh": "迷走神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "accessory nerve",
+      "zh": "副神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "hypoglossal nerve",
+      "zh": "舌下神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "median nerve",
+      "zh": "正中神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "ulnar nerve",
+      "zh": "尺神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "radial nerve",
+      "zh": "桡神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sciatic nerve",
+      "zh": "坐骨神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "femoral nerve",
+      "zh": "股神经",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brachial plexus",
+      "zh": "臂丛",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cornea",
+      "zh": "角膜",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sclera",
+      "zh": "巩膜",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "iris",
+      "zh": "虹膜",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "retina",
+      "zh": "视网膜",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "lens",
+      "zh": "晶状体",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "cochlea",
+      "zh": "耳蜗",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "incus",
+      "zh": "砧骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "malleus",
+      "zh": "锤骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "stapes",
+      "zh": "镫骨",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "deltoid",
+      "zh": "三角肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "trapezius",
+      "zh": "斜方肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sternocleidomastoid",
+      "zh": "胸锁乳突肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pectoralis major",
+      "zh": "胸大肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "pectoralis minor",
+      "zh": "胸小肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "latissimus dorsi",
+      "zh": "背阔肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "serratus anterior",
+      "zh": "前锯肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "biceps brachii",
+      "zh": "肱二头肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "triceps brachii",
+      "zh": "肱三头肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brachialis",
+      "zh": "肱肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "brachioradialis",
+      "zh": "肱桡肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "rectus abdominis",
+      "zh": "腹直肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "external oblique",
+      "zh": "腹外斜肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "internal oblique",
+      "zh": "腹内斜肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "gluteus maximus",
+      "zh": "臀大肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "gluteus medius",
+      "zh": "臀中肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "gluteus minimus",
+      "zh": "臀小肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "sartorius",
+      "zh": "缝匠肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "rectus femoris",
+      "zh": "股直肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "biceps femoris",
+      "zh": "股二头肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "semitendinosus",
+      "zh": "半腱肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "semimembranosus",
+      "zh": "半膜肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "gastrocnemius",
+      "zh": "腓肠肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "soleus",
+      "zh": "比目鱼肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "tibialis anterior",
+      "zh": "胫骨前肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "masseter",
+      "zh": "咬肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "temporalis",
+      "zh": "颞肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    },
+    {
+      "en": "orbicularis oculi",
+      "zh": "眼轮匝肌",
+      "status": "textbook-matched",
+      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+    }
+  ]
+}

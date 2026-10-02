@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>系统解剖学 · 3D伴学</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="search.css"></head>
+<body>
+<header><div><span class="eyebrow">SYSTEMATIC ANATOMY</span><h1 id="lesson-title">系统解剖学 · 3D伴学</h1></div><span id="load-status" role="status">正在加载模型…</span></header>
+<main>
+<aside>
+  <p class="intro" id="intro"></p>
+  <label class="field-title" for="step-menu">学习步骤</label><select id="step-menu"></select>
+  <div class="step-number" id="step-number"></div><h2 id="step-title"></h2>
+  <p class="body" id="explanation"></p>
+  <div class="source" id="source"></div>
+  <section class="question" id="question-block"><span class="field-title">停下来想一想</span><p id="question"></p><details id="answer"><summary>查看答案与辨认依据</summary><p id="answer-text"></p></details></section>
+  <div class="navigation"><button id="previous">← 上一步</button><button class="primary" id="next">下一步 →</button></div>
+  <div class="search-box"><label class="field-title" for="search">查找本页结构</label><input id="search" type="search" placeholder="中文、英文或模型ID" autocomplete="off"><div id="search-results"></div></div>
+  <details class="structures"><summary>本步显示的结构</summary><div id="structure-list"></div></details>
+  <details class="resources"><summary>资料与模型来源</summary><div id="resources"></div><p>中文名称按资料匹配并标注状态；模型细节与几何准确性未经独立解剖教师审定。</p><a href="ATTRIBUTION.md" target="_blank" rel="noopener">模型来源与适用范围</a></details>
+</aside>
+<section class="viewport" aria-label="三维观察区">
+ <div class="scene-toolbar"><div class="view-group" role="group" aria-label="观察方向"><button data-view="front">前面观</button><button data-view="back">后面观</button><button data-view="left">左侧观</button><button data-view="right">右侧观</button><button data-view="top">上面观</button><button data-view="oblique">斜面观</button></div><span id="view-status">斜面观</span></div>
+ <div id="scene"><div id="mesh-labels" aria-hidden="true"></div></div>
+ <div id="layout-notice" class="layout-notice" hidden>同尺度形态对比：位置已平移。判断毗邻请切回原位。</div>
+ <div id="picked" class="picked" hidden></div>
+ <div class="bottom-controls"><button id="names">隐藏名称</button><button id="isolate" disabled>单独观察</button><button id="layout">并排对比</button><button id="orbit">自动环绕</button><button id="fit">重置视角</button><span>拖动旋转 · 滚轮缩放 · 点击结构</span></div>
+</section>
+</main>
+<noscript>三维观察需要启用JavaScript。</noscript><script type="module" src="viewer.js"></script>
+</body></html>
