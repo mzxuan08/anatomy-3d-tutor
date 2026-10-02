@@ -3,19 +3,24 @@ import { OrbitControls } from './vendor/OrbitControls.js';
 
 const $ = id => document.getElementById(id);
 const namesOfView={front:'前面观',back:'后面观',left:'人体左侧观',right:'人体右侧观',top:'上面观',bottom:'下面观',oblique:'斜面观'};
-const statuses={'textbook-matched':'教材匹配','course-matched':'课件匹配',derived:'规则派生',unmatched:'暂无已核对中文名'};
+const statuses={'textbook-matched':'教材中文已定位（人工对应）','course-matched':'课件匹配','reference-matched':'中英参考条目与教材已定位',derived:'限定规则派生',unmatched:'暂无有依据的中文名','review-needed':'译名待复核，保留英文'};
 const colors={skeletal:'#ded0ad',muscular:'#b97571',arterial:'#c85758',venous:'#678cb1',nervous:'#d3b565',respiratory:'#9fbfb4',digestive:'#d4a685',urinary:'#bc947c',reproductive:'#c5a0aa',lymphatic:'#88ae91',endocrine:'#c4ad7b',integumentary:'#dbb7a0',connective:'#c0c6b0',brain:'#c8b6b1',cardiac:'#bb777b',borrowed:'#cabd90','donor-muscle':'#b78680'};
 let lesson,atlas,renderer,scene,camera,controls,meshes=new Map(),stepIndex=0,showNames=true,layout='native',picked=null,lastView='oblique',ready=false,transition=null;
 let userInteraction=false,isolated=false;
 const host=$('scene'),labelHost=$('mesh-labels'),raycaster=new T.Raycaster();
 
 function text(id,value){$(id).textContent=value??'';}
-function displayName(part){return part.lesson_label||part.terminology?.zh||part.name;}
+function acceptedTerm(part){const t=part.terminology,refs=atlas.terminology_sources||{};if(!t?.zh||!['textbook-matched','course-matched','reference-matched','derived'].includes(t.status)||!t.sources?.length||!t.sources.every(r=>refs[r.source_id]&&(r.locator||(r.pdf_page&&r.term_id))))return false;const kinds=t.sources.map(r=>refs[r.source_id].kind),required={'textbook-matched':['textbook'],'course-matched':['course'],'reference-matched':['textbook','bilingual-reference'],derived:[]}[t.status];return required.every(kind=>kinds.includes(kind));}
+function displayName(part){return (part.lesson_label_source&&part.lesson_label)||(acceptedTerm(part)?part.terminology.zh:part.name);}
+function normalizeSearch(value){const nums={'一':1,'二':2,'三':3,'四':4,'五':5,'六':6,'七':7,'八':8,'九':9,'十':10,'十一':11,'十二':12};return value.normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim().replace(/第(十二|十一|十|九|八|七|六|五|四|三|二|一)(?=颈椎|胸椎|腰椎|肋|掌骨|跖骨|脑室|趾|指)/g,(_,n)=>`第${nums[n]}`);}
+function searchKeys(part){return [displayName(part),part.name,part.id,...(acceptedTerm(part)?part.terminology.aliases_zh||[]:[]),...(acceptedTerm(part)?part.terminology.aliases_en||[]:[])].map(normalizeSearch);}
+function termSources(part){return (part.terminology?.sources||[]).map(ref=>{const source=atlas.terminology_sources?.[ref.source_id];return `${source?.title||ref.source_id}${ref.locator?' · '+ref.locator:''}${ref.pdf_page?' · PDF第'+ref.pdf_page+'页':''}${ref.term_id?' · 条目'+ref.term_id:''}${ref.evidence_type==='chinese-context'?'（仅中文提及，英文对应另核对）':ref.evidence_type==='bilingual-context'?'（同段中英对应）':''}`;}).join('\n');}
 function safeName(part){return showNames?displayName(part):`结构 ${[...meshes.keys()].indexOf(part.id)+1}`;}
 function detail(part){
  if(!showNames) return `${safeName(part)}\n请在聊天中说出名称和辨认依据，准备好后再查看答案。`;
  const reference=atlas.sex==='female'?(part.system==='borrowed'?'女性参考体上的男性来源借用骨':part.system==='donor-muscle'?'女性参考体上的第二女性来源下肢肌':'女性组合参考模型'):'男性参考模型';
- return `${displayName(part)}\n${part.name} · ${part.id}\n术语状态：${statuses[part.terminology?.status]||'未匹配'}${part.lesson_label?'；本课另有中文标注':''}\n${reference}`;
+ const term=part.terminology||{},source=termSources(part);
+ return `${displayName(part)}\n${part.name} · ${part.id}\n术语状态：${statuses[term.status]||'未匹配'}${part.lesson_label_source?'；课内标注依据：'+part.lesson_label_source:''}${term.rule?'\n派生依据：'+term.rule:''}${term.note?'\n'+term.note:''}${source?'\n术语来源：\n'+source:'\n中文术语依据待补充'}\n${reference}`;
 }
 function updateNames(){
  text('names',showNames?'隐藏名称':'显示名称');
@@ -69,7 +74,7 @@ function setLayout(next,animate=true){
 }
 function setStep(index){
  stepIndex=Math.max(0,Math.min(lesson.steps.length-1,index));const step=lesson.steps[stepIndex];
- text('step-number',`STEP ${String(stepIndex+1).padStart(2,'0')} / ${String(lesson.steps.length).padStart(2,'0')}`);
+ text('step-number',`步骤 ${String(stepIndex+1).padStart(2,'0')} / ${String(lesson.steps.length).padStart(2,'0')}`);
  text('step-title',step.title);text('explanation',step.body);text('source',step.source);text('question',step.prompt);text('answer-text',step.answer);
  $('question-block').hidden=!step.prompt;$('answer').hidden=!step.answer;$('answer').open=false;
  $('step-menu').value=String(stepIndex);$('previous').disabled=stepIndex===0;$('next').disabled=stepIndex===lesson.steps.length-1;
@@ -96,6 +101,7 @@ async function initialize(){
  document.title=lesson.title+' · 3D伴学';text('lesson-title',lesson.title);text('intro',lesson.intro||'观察、理解，再用指认检验记忆。');
  lesson.steps.forEach((s,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=`${i+1}. ${s.title}`;$('step-menu').append(option);});
  for(const source of lesson.sources||[]){const p=document.createElement('p');p.textContent=source.title+(source.pages?.length?` · PDF第${source.pages.join('、')}页`:'');$('resources').append(p);}
+ for(const source of Object.values(atlas.terminology_sources||{})){const p=document.createElement('p');p.textContent=`术语依据：${source.title} · ${source.role||''}`;if(source.url){try{const url=new URL(source.url);if(url.protocol==='https:'||url.protocol==='http:'){const a=document.createElement('a');a.href=url.href;a.target='_blank';a.rel='noopener';a.textContent='查看来源';p.append(document.createTextNode(' · '),a);}}catch{}}$('resources').append(p);}
  renderer=new T.WebGLRenderer({antialias:true,alpha:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;
  renderer.domElement.setAttribute('aria-label','解剖学三维模型，可拖动旋转、滚轮缩放、点击选择结构');host.prepend(renderer.domElement);
  scene=new T.Scene();camera=new T.PerspectiveCamera(35,1,.001,100);camera.position.set(.5,1,2);
@@ -105,7 +111,7 @@ async function initialize(){
  scene.add(new T.HemisphereLight('#ffffff','#75887c',1.0));const key=new T.DirectionalLight('#fff8ed',2.2);key.position.set(-2,4,4);scene.add(key);const rim=new T.DirectionalLight('#e1f4ef',.7);rim.position.set(3,1,-2);scene.add(rim);
  const chunkResponses=await Promise.all(atlas.chunks.map(c=>fetch(c.url)));if(chunkResponses.some(r=>!r.ok))throw new Error('模型几何加载失败');const buffers=await Promise.all(chunkResponses.map(r=>r.arrayBuffer()));
  for(const part of atlas.parts){const buffer=buffers[part.chunk];const geometry=new T.BufferGeometry();geometry.setAttribute('position',new T.BufferAttribute(new Float32Array(buffer,part.positions,part.vertexCount*3),3));geometry.setAttribute('normal',new T.BufferAttribute(new Int16Array(buffer,part.normals,part.vertexCount*3),3,true));geometry.setIndex(new T.BufferAttribute(new Uint32Array(buffer,part.indices,part.indexCount),1));geometry.computeBoundingBox();geometry.computeBoundingSphere();
-  const material=new T.MeshStandardMaterial({color:colors[part.system]||'#bbbaa7',roughness:.62,metalness:.025,side:T.DoubleSide});const mesh=new T.Mesh(geometry,material);mesh.userData.part=part;meshes.set(part.id,mesh);scene.add(mesh);
+  const material=new T.MeshStandardMaterial({color:colors[part.teaching_system||part.system]||'#bbbaa7',roughness:.62,metalness:.025,side:T.DoubleSide});const mesh=new T.Mesh(geometry,material);mesh.userData.part=part;meshes.set(part.id,mesh);scene.add(mesh);
  }
  const resize=()=>{camera.aspect=host.clientWidth/Math.max(1,host.clientHeight);camera.updateProjectionMatrix();renderer.setSize(host.clientWidth,host.clientHeight);if(ready)fit(lastView,false);};new ResizeObserver(resize).observe(host);resize();
  let down=null;renderer.domElement.addEventListener('pointerdown',e=>{down={x:e.clientX,y:e.clientY};});
@@ -113,7 +119,7 @@ async function initialize(){
  $('previous').onclick=()=>setStep(stepIndex-1);$('next').onclick=()=>setStep(stepIndex+1);$('step-menu').onchange=e=>setStep(Number(e.target.value));
  $('names').onclick=()=>{showNames=!showNames;updateNames();};$('layout').onclick=()=>{setLayout(layout==='native'?'compare':'native');updateNames();};$('fit').onclick=()=>fit(lesson.steps[stepIndex].view||'oblique');
  $('isolate').onclick=()=>{if(!picked)return;isolated=!isolated;for(const mesh of meshes.values())mesh.visible=isolated?mesh===picked:lesson.steps[stepIndex].show.includes(mesh.userData.part.id);text('isolate',isolated?'返回本步整体':'单独观察');$('isolate').classList.toggle('active',isolated);setLayout('native');updateNames();};
- $('search').addEventListener('input',()=>{const results=$('search-results');results.replaceChildren();const query=$('search').value.trim().toLowerCase();if(!query||!showNames)return;const found=atlas.parts.filter(p=>`${displayName(p)} ${p.name} ${p.id}`.toLowerCase().includes(query)).slice(0,10);for(const part of found){const button=document.createElement('button');button.className='structure-item';button.textContent=displayName(part);const small=document.createElement('small');small.textContent=part.name;button.append(small);button.onclick=()=>{const index=lesson.steps.findIndex(s=>s.show.includes(part.id));setStep(index);select(meshes.get(part.id));};results.append(button);}if(!found.length){const p=document.createElement('p');p.textContent='本页未包含该结构。可在聊天中让我查询完整模型清单。';results.append(p);}});
+ $('search').addEventListener('input',()=>{const results=$('search-results');results.replaceChildren();const query=normalizeSearch($('search').value);if(!query||!showNames)return;const found=atlas.parts.filter(p=>searchKeys(p).some(key=>key.includes(query))).sort((a,b)=>Number(!searchKeys(a).includes(query))-Number(!searchKeys(b).includes(query))).slice(0,10);for(const part of found){const button=document.createElement('button');button.className='structure-item';button.textContent=displayName(part);const small=document.createElement('small');small.textContent=part.name;button.append(small);button.onclick=()=>{const index=lesson.steps.findIndex(s=>s.show.includes(part.id));setStep(index);select(meshes.get(part.id));};results.append(button);}if(!found.length){const p=document.createElement('p');p.textContent='本页没有可确认的匹配。未收录中文译名时可用英文或模型ID，也可在聊天中让我核对。';results.append(p);}});
  $('orbit').onclick=()=>{transition=null;controls.autoRotate=!controls.autoRotate;text('orbit',controls.autoRotate?'暂停环绕':'自动环绕');$('orbit').classList.toggle('active',controls.autoRotate);if(controls.autoRotate)text('view-status','自动环绕 · 人体方位不变');};
  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>fit(b.dataset.view));
  ready=true;setStep(0);fit(lesson.steps[0].view||'oblique',false);text('load-status',`${atlas.sex==='female'?'女性组合参考':'男性参考'} · ${atlas.parts.length} 个结构`);

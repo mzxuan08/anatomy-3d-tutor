@@ -4,8 +4,9 @@ if (-not (Test-Path -LiteralPath $taskRuntime)) {
     $taskRuntime = (Get-Command python -ErrorAction Stop).Source
 }
 $taskSibling = Join-Path (Split-Path -Parent $PSScriptRoot) 'anatomy-3d-tutor\scripts\atlas_tutor.py'
+$taskRepository = Join-Path $PSScriptRoot '..\..\scripts\atlas_tutor.py'
 $taskInstalled = Join-Path $env:USERPROFILE '.codex\skills\anatomy-3d-tutor\scripts\atlas_tutor.py'
-$taskScript = if (Test-Path -LiteralPath $taskSibling) { $taskSibling } else { $taskInstalled }
+$taskScript = if (Test-Path -LiteralPath $taskRepository) { $taskRepository } elseif (Test-Path -LiteralPath $taskSibling) { $taskSibling } else { $taskInstalled }
 if (-not (Test-Path -LiteralPath $taskScript)) { throw '找不到伴学技能脚本，请先安装技能包。' }
 $taskReceipt = Get-Content -LiteralPath (Join-Path $PSScriptRoot '.anatomy-tutor.json') -Raw | ConvertFrom-Json
 $taskPort = $null

@@ -28,6 +28,7 @@ python scripts/atlas_tutor.py serve --site 'OUTPUTS/my-lesson' --port 8765
   "title":"本次学习主题", "sex":"male", "intro":"具体目标",
   "sources":[{"title":"课件","path":"COURSE.pdf","pages":[9]}],
   "labels":{"REAL_ID":"经核对中文名"},
+  "label_sources":{"REAL_ID":"指定课件PDF第9页，英文概念对应已核对"},
   "steps":[{
     "title":"观察整体", "body":"观察什么和为什么",
     "show":["REAL_ID"], "highlight":[],
@@ -39,7 +40,7 @@ python scripts/atlas_tutor.py serve --site 'OUTPUTS/my-lesson' --port 8765
 ```
 
 - show非空，使用真实mesh/concept ID，concept解析为网格；highlight必须包含于本步显示集合。
-- 一个lesson使用一个性别清单，不混两套IDs。手工labels应先按出处核对。
+- 一个lesson使用一个性别清单，不混两套IDs。手工labels应先按出处核对，label_sources为每个标注提供具体定位；缺少出处时构建会拒绝该标注。
 - view：front/back/left/right/top/bottom/oblique。源模型Y向上、+Z前、+X人体左；预设按人体方向命名，自由转动后注明自由视角。
 - layout：native保留原位，compare同尺度横向平移并标明，不用于判断原位邻接。
 - quiz:true关闭名称、列表名称、点击信息；题面不能泄露待辨认名称，答案主动展开。点击正确还需口述依据。
@@ -49,5 +50,7 @@ python scripts/atlas_tutor.py serve --site 'OUTPUTS/my-lesson' --port 8765
 build生成离线资源完整的index.html、viewer.js、lesson.json、中文术语状态、选定几何与许可/来源文件。explore使用同一播放器生成全清单浏览页，可用--system限定展示分组（不是教材系统分类）。骨学展示会排除牙龈/牙列并另列口腔参考，原始分组仍保留。输出目录必须新建或已有同类学习页，不覆盖其他项目。
 
 ## 核验
+
+搜索支持已确认的常用名（如肾脏→肾）和第3/第三的等价编号。点击结构可查看术语状态、派生规则、教材章节及中英参考的PDF页和条目号。待核对名称不会成为标签。audit --sex male/female/all生成按展示分组的覆盖和缺口样本；all遇到缺少女性清单时如实跳过，不把缺失当成零覆盖。
 
 搜索审阅英文名、侧别和中文对应；运行build/validate检查IDs、显隐与缓冲区/索引/有限坐标；浏览器确认真实模型出现、相机与并排切换、点击辨认、测验不漏名称、答案主动展开。程序检查不是解剖学审定；画面细节不足时修订题目并改用课件图。

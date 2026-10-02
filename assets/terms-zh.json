@@ -1,1510 +1,5691 @@
 {
-  "scope": "常用基础术语，非全量官方双语表",
+  "scope": "人工选择的教学术语与限定模板；未匹配、歧义和缺少来源的条目保留英文",
   "records": [
     {
       "en": "skull",
       "zh": "颅",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 三、颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 476,
+          "term_id": "01.0042"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "cranium",
       "zh": "颅",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 422,
+          "term_id": "01.0042"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "frontal bone",
       "zh": "额骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 431,
+          "term_id": "02.0280"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "parietal bone",
       "zh": "顶骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 461,
+          "term_id": "02.0265"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "temporal bone",
       "zh": "颞骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 486,
+          "term_id": "02.0198"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "occipital bone",
       "zh": "枕骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 458,
+          "term_id": "02.0114"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "sphenoid bone",
       "zh": "蝶骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 477,
+          "term_id": "02.0146"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ethmoid",
       "zh": "筛骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ethmoid bone",
       "zh": "筛骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）脑颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "02.0304"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vomer",
       "zh": "犁骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 494,
+          "term_id": "02.0331"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "maxilla",
       "zh": "上颌骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 450,
+          "term_id": "02.0336"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "mandible",
       "zh": "下颌骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 450,
+          "term_id": "02.0393"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "zygomatic bone",
       "zh": "颧骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 495,
+          "term_id": "02.0385"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "palatine bone",
       "zh": "腭骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 460,
+          "term_id": "02.0372"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "nasal bone",
       "zh": "鼻骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 456,
+          "term_id": "02.0328"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "lacrimal bone",
       "zh": "泪骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 443,
+          "term_id": "02.0325"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "inferior nasal concha",
       "zh": "下鼻甲",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 437,
+          "term_id": "02.0321"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 437,
+          "term_id": "03.0430"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "hyoid bone",
       "zh": "舌骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 面颅骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 434,
+          "term_id": "02.0429"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "atlas",
       "zh": "寰椎",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "axis",
       "zh": "枢椎",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "sacrum",
       "zh": "骶骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 474,
+          "term_id": "02.0485"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "coccyx",
       "zh": "尾骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 420,
+          "term_id": "02.0503"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "sternum",
       "zh": "胸骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 胸骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "02.0536"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "manubrium",
       "zh": "胸骨柄",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 胸骨",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "body of sternum",
       "zh": "胸骨体",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 胸骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 415,
+          "term_id": "02.0541"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "xiphoid process",
       "zh": "剑突",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (二) 胸骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 494,
+          "term_id": "02.0542"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "rib",
-      "zh": "肋骨",
+      "zh": "肋",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (三) 肋",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 472,
+          "term_id": "02.0516"
+        }
+      ],
+      "aliases_zh": [
+        "肋骨"
+      ],
+      "note": "标准名肋包含骨性与软骨性部分；本页所见范围以具体网格为准，肋骨作为搜索词。",
+      "allow_side": false
     },
     {
       "en": "costal cartilage",
       "zh": "肋软骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (三) 肋",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 422,
+          "term_id": "02.0520"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "clavicle",
       "zh": "锁骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 1. 上肢带骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 419,
+          "term_id": "02.0565"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "scapula",
       "zh": "肩胛骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 1. 上肢带骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 474,
+          "term_id": "02.0548"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "humerus",
       "zh": "肱骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由上肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 434,
+          "term_id": "02.0576"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "radius",
       "zh": "桡骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由上肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 471,
+          "term_id": "02.0606"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "ulna",
       "zh": "尺骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由上肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 491,
+          "term_id": "02.0624"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "scaphoid",
       "zh": "舟骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "lunate",
       "zh": "月骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "triquetral",
       "zh": "三角骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "pisiform",
       "zh": "豌豆骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "trapezium",
       "zh": "大多角骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "trapezoid",
       "zh": "小多角骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "capitate",
       "zh": "头状骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "hamate",
       "zh": "钩骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "hip bone",
       "zh": "髋骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （二）下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 434,
+          "term_id": "02.0672"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "ilium",
       "zh": "髂骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （二）下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 435,
+          "term_id": "02.0679"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ischium",
       "zh": "坐骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （二）下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 442,
+          "term_id": "02.0702"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pubis",
       "zh": "耻骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （二）下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 470,
+          "term_id": "02.0708"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "femur",
       "zh": "股骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 429,
+          "term_id": "02.0736"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "patella",
       "zh": "髌骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 462,
+          "term_id": "02.0769"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "tibia",
       "zh": "胫骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "02.0774"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "fibula",
       "zh": "腓骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 429,
+          "term_id": "02.0799"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "talus",
       "zh": "距骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 486,
+          "term_id": "02.0819"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "calcaneus",
       "zh": "跟骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 416,
+          "term_id": "02.0837"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "cuboid bone",
       "zh": "骰骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 423,
+          "term_id": "02.0859"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "navicular bone",
       "zh": "足舟骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 456,
+          "term_id": "02.0853"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "medial cuneiform bone",
       "zh": "内侧楔骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 451,
+          "term_id": "02.0856"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "intermediate cuneiform bone",
       "zh": "中间楔骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 439,
+          "term_id": "02.0857"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "lateral cuneiform bone",
       "zh": "外侧楔骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 444,
+          "term_id": "02.0858"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "vertebral column",
       "zh": "脊柱",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / 二、躯干骨的连结",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 493,
+          "term_id": "02.1139"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vertebra",
       "zh": "椎骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 493,
+          "term_id": "02.0440"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "intervertebral disk",
       "zh": "椎间盘",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / (一) 直接连结",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "nucleus pulposus",
       "zh": "髓核",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / （一）椎骨间的连结",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 457,
+          "term_id": "02.1116"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "anulus fibrosus",
       "zh": "纤维环",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / （一）椎骨间的连结",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ligamentum flavum",
       "zh": "黄韧带",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / （一）椎骨间的连结",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "anterior longitudinal ligament",
       "zh": "前纵韧带",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / （一）椎骨间的连结",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 409,
+          "term_id": "02.1117"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "posterior longitudinal ligament",
       "zh": "后纵韧带",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第二节｜骨连结 / （一）椎骨间的连结",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 466,
+          "term_id": "02.1118"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "heart",
       "zh": "心",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （一）心血管系统的组成",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 433,
+          "term_id": "05.0034"
+        }
+      ],
+      "aliases_zh": [
+        "心脏"
+      ],
+      "allow_side": false
     },
     {
       "en": "right atrium",
       "zh": "右心房",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (二) 心腔",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 472,
+          "term_id": "05.0073"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "left atrium",
       "zh": "左心房",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (二) 心腔",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 446,
+          "term_id": "05.0108"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "right ventricle",
       "zh": "右心室",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (二) 心腔",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 473,
+          "term_id": "05.0089"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "left ventricle",
       "zh": "左心室",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (二) 心腔",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 447,
+          "term_id": "05.0113"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "aorta",
       "zh": "主动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 411,
+          "term_id": "05.0181"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ascending aorta",
       "zh": "升主动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 412,
+          "term_id": "05.0182"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "descending aorta",
       "zh": "降主动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 425,
+          "term_id": "05.0550"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "arch of aorta",
       "zh": "主动脉弓",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （一）肺循环的动脉",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pulmonary trunk",
       "zh": "肺动脉干",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （一）肺循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 470,
+          "term_id": "05.0139"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "superior vena cava",
       "zh": "上腔静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 484,
+          "term_id": "05.0866"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "inferior vena cava",
       "zh": "下腔静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 438,
+          "term_id": "05.1165"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "common carotid artery",
       "zh": "颈总动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 420,
+          "term_id": "05.0215"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "internal carotid artery",
       "zh": "颈内动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 440,
+          "term_id": "05.0309"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "external carotid artery",
       "zh": "颈外动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "05.0219"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vertebral artery",
       "zh": "椎动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 493,
+          "term_id": "05.0411"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "subclavian artery",
       "zh": "锁骨下动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 479,
+          "term_id": "05.0410"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "axillary artery",
       "zh": "腋动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 413,
+          "term_id": "05.0496"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "brachial artery",
       "zh": "肱动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 415,
+          "term_id": "05.0512"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "radial artery",
       "zh": "桡动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 471,
+          "term_id": "05.0521"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "ulnar artery",
       "zh": "尺动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的动脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 491,
+          "term_id": "05.0534"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "femoral artery",
       "zh": "股动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / 4. 腹主动脉 腹主动脉 abdominal aorta 是腹部的动脉主干(见图 7-27)。腹主动脉在膈的主动脉裂孔处续于胸主动脉,沿腰椎的前方下降,至第 4 腰椎椎体的下缘处分为左、右髂总动脉。腹主动脉亦有壁支和脏支两种分支。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 429,
+          "term_id": "05.0731"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "popliteal artery",
       "zh": "腘动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / 4. 腹主动脉 腹主动脉 abdominal aorta 是腹部的动脉主干(见图 7-27)。腹主动脉在膈的主动脉裂孔处续于胸主动脉,沿腰椎的前方下降,至第 4 腰椎椎体的下缘处分为左、右髂总动脉。腹主动脉亦有壁支和脏支两种分支。",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "common iliac artery",
       "zh": "髂总动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / 4. 腹主动脉 腹主动脉 abdominal aorta 是腹部的动脉主干(见图 7-27)。腹主动脉在膈的主动脉裂孔处续于胸主动脉,沿腰椎的前方下降,至第 4 腰椎椎体的下缘处分为左、右髂总动脉。腹主动脉亦有壁支和脏支两种分支。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 420,
+          "term_id": "05.0672"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "internal iliac artery",
       "zh": "髂内动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / 4. 腹主动脉 腹主动脉 abdominal aorta 是腹部的动脉主干(见图 7-27)。腹主动脉在膈的主动脉裂孔处续于胸主动脉,沿腰椎的前方下降,至第 4 腰椎椎体的下缘处分为左、右髂总动脉。腹主动脉亦有壁支和脏支两种分支。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 440,
+          "term_id": "05.0673"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "external iliac artery",
       "zh": "髂外动脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / 4. 腹主动脉 腹主动脉 abdominal aorta 是腹部的动脉主干(见图 7-27)。腹主动脉在膈的主动脉裂孔处续于胸主动脉,沿腰椎的前方下降,至第 4 腰椎椎体的下缘处分为左、右髂总动脉。腹主动脉亦有壁支和脏支两种分支。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "05.0722"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "internal jugular vein",
       "zh": "颈内静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 440,
+          "term_id": "05.0891"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "external jugular vein",
       "zh": "颈外静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "05.0934"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "subclavian vein",
       "zh": "锁骨下静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / （二）体循环的静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 479,
+          "term_id": "05.1102"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "axillary vein",
       "zh": "腋静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 413,
+          "term_id": "05.1106"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "brachial vein",
       "zh": "肱静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 415,
+          "term_id": "05.1132"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "femoral vein",
       "zh": "股静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 429,
+          "term_id": "05.1295"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "great saphenous vein",
       "zh": "大隐静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 433,
+          "term_id": "05.1270"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "small saphenous vein",
       "zh": "小隐静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 476,
+          "term_id": "05.1282"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "azygos vein",
       "zh": "奇静脉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 413,
+          "term_id": "05.1140"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "lung",
       "zh": "肺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第二节｜肺 / 一、肺的位置和形态",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 449,
+          "term_id": "03.0585"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "trachea",
       "zh": "气管",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / (一) 气管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "03.0549"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "larynx",
       "zh": "喉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / 三、喉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 443,
+          "term_id": "03.0456"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "thyroid cartilage",
       "zh": "甲状软骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / （一）喉软骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "03.0459"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "cricoid cartilage",
       "zh": "环状软骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / （一）喉软骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 422,
+          "term_id": "03.0476"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "arytenoid cartilage",
       "zh": "杓状软骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / （一）喉软骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 412,
+          "term_id": "03.0486"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "epiglottis",
       "zh": "会厌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / （一）喉软骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 427,
+          "term_id": "03.0525"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "diaphragm",
       "zh": "膈",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 四、躯干肌",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [
+        "膈肌"
+      ],
+      "allow_side": false
     },
     {
       "en": "nasal cavity",
       "zh": "鼻腔",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "03-第三章 呼吸系统 / 第一节｜呼吸道 / (二) 鼻腔",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 456,
+          "term_id": "03.0416"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pharynx",
       "zh": "咽",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / （一）咽的位置和形态",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 463,
+          "term_id": "03.0142"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "esophagus",
       "zh": "食管",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / （一）食管的位置和分部",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "03.0203"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "stomach",
       "zh": "胃",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / 四、胃",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "03.0210"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "duodenum",
       "zh": "十二指肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (一) 十二指肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 426,
+          "term_id": "03.0241"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "jejunum",
       "zh": "空肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / （二）空肠和回肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 442,
+          "term_id": "03.0255"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ileum",
       "zh": "回肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / （二）空肠和回肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 435,
+          "term_id": "03.0256"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "cecum",
       "zh": "盲肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (一) 盲肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 418,
+          "term_id": "03.0259"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "appendix",
       "zh": "阑尾",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / （二）空肠和回肠",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vermiform appendix",
       "zh": "阑尾",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (二) 阑尾",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 493,
+          "term_id": "03.0266"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ascending colon",
       "zh": "升结肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (三) 结肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 413,
+          "term_id": "03.0270"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "transverse colon",
       "zh": "横结肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (三) 结肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 489,
+          "term_id": "03.0272"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "descending colon",
       "zh": "降结肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (三) 结肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 425,
+          "term_id": "03.0274"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "sigmoid colon",
       "zh": "乙状结肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (三) 结肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 476,
+          "term_id": "03.0275"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "rectum",
       "zh": "直肠",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (四) 直肠",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 471,
+          "term_id": "03.0283"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "liver",
       "zh": "肝",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / 一、肝",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 448,
+          "term_id": "03.0301"
+        }
+      ],
+      "aliases_zh": [
+        "肝脏"
+      ],
+      "allow_side": false
     },
     {
       "en": "gallbladder",
       "zh": "胆囊",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / (一) 胆囊",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 431,
+          "term_id": "03.0371"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pancreas",
       "zh": "胰",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / 三、胰",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 460,
+          "term_id": "03.0381"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "spleen",
       "zh": "脾",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第二节｜淋巴系统 / （三）淋巴器官",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "05.1514"
+        }
+      ],
+      "aliases_zh": [
+        "脾脏"
+      ],
+      "allow_side": false
     },
     {
       "en": "tongue",
       "zh": "舌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (五) 舌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "03.0106"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "parotid gland",
       "zh": "腮腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (六) 唾液腺",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 461,
+          "term_id": "03.0044"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "submandibular gland",
       "zh": "下颌下腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (六) 唾液腺",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 480,
+          "term_id": "03.0042"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "sublingual gland",
       "zh": "舌下腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第一节｜消化管 / (六) 唾液腺",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 479,
+          "term_id": "03.0039"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "kidney",
       "zh": "肾",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第一节｜肾 / 一、肾的形态",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 443,
+          "term_id": "03.0663"
+        }
+      ],
+      "aliases_zh": [
+        "肾脏"
+      ],
+      "allow_side": true
     },
     {
       "en": "ureter",
       "zh": "输尿管",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第二节｜输尿管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 491,
+          "term_id": "03.0682"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "urinary bladder",
       "zh": "膀胱",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第三节｜膀胱",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 491,
+          "term_id": "03.0686"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "urethra",
       "zh": "尿道",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第四节｜",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "renal pelvis",
       "zh": "肾盂",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第一节｜肾 / 一、肾的形态",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 472,
+          "term_id": "03.0678"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "major calyx",
       "zh": "肾大盏",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第一节｜肾 / 一、肾的形态",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "minor calyx",
       "zh": "肾小盏",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第一节｜肾 / 一、肾的形态",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "testis",
       "zh": "睾丸",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第一节｜男性生殖系统 / (一) 睾丸",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 487,
+          "term_id": "03.0701"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "epididymis",
       "zh": "附睾",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第一节｜男性生殖系统 / （二）附睾",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 427,
+          "term_id": "03.0718"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "prostate",
       "zh": "前列腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第一节｜男性生殖系统 / (五) 前列腺",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 469,
+          "term_id": "03.0741"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "seminal vesicle",
       "zh": "精囊",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第一节｜男性生殖系统 / (四) 精囊",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 475,
+          "term_id": "03.0734"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "ductus deferens",
       "zh": "输精管",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第一节｜男性生殖系统",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ovary",
       "zh": "卵巢",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第二节｜女性生殖系统 / (一) 卵巢",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 459,
+          "term_id": "03.0805"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "uterus",
       "zh": "子宫",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第二节｜女性生殖系统 / (三) 子宫",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 492,
+          "term_id": "03.0823"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "uterine tube",
       "zh": "输卵管",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第二节｜女性生殖系统 / （二）输卵管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 491,
+          "term_id": "03.0816"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vagina",
       "zh": "阴道",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "05-第五章 生殖系统 / 第二节｜女性生殖系统 / （四）阴道",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 492,
+          "term_id": "03.0845"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "thyroid gland",
       "zh": "甲状腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第四节｜神经系统的传导通路 / J",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "04.0002"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "parathyroid gland",
       "zh": "甲状旁腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第四节｜神经系统的传导通路 / J",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "adrenal gland",
       "zh": "肾上腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第一节｜肾 / 二、肾的位置和毗邻",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 406,
+          "term_id": "04.0021"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "suprarenal gland",
       "zh": "肾上腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "04-第四章 泌尿系统 / 第一节｜肾 / 二、肾的位置和毗邻",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 485,
+          "term_id": "04.0021"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pituitary gland",
       "zh": "垂体",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第四节｜神经系统的传导通路 / C",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 464,
+          "term_id": "04.0014"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pineal gland",
       "zh": "松果体",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / Ⅲ. 中脑的中继核",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "thymus",
       "zh": "胸腺",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第二节｜淋巴系统 / （三）淋巴器官",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "04.0020"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "05.1309"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "brain",
       "zh": "脑",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 二、脑",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "cerebrum",
       "zh": "大脑",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (四) 端脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 419,
+          "term_id": "06.0567"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "cerebellum",
       "zh": "小脑",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (二) 小脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 418,
+          "term_id": "06.0390"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "brainstem",
       "zh": "脑干",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / （二）脊髓的内部结构",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "midbrain",
       "zh": "中脑",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (1) 脑干的腹侧面",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 454,
+          "term_id": "06.0328"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "pons",
       "zh": "脑桥",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (1) 脑干的腹侧面",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 464,
+          "term_id": "06.0268"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "medulla oblongata",
       "zh": "延髓",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (1) 脑干的腹侧面",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 453,
+          "term_id": "06.0217"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "spinal cord",
       "zh": "脊髓",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 一、脊髓",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 477,
+          "term_id": "06.0138"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "optic nerve",
       "zh": "视神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / （二）视神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 459,
+          "term_id": "06.1032"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "optic chiasm",
       "zh": "视交叉",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / （三）间脑",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "oculomotor nerve",
       "zh": "动眼神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / （三）动眼神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 458,
+          "term_id": "06.1040"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "trigeminal nerve",
       "zh": "三叉神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (五) 三叉神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 490,
+          "term_id": "06.1050"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "abducent nerve",
       "zh": "展神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (六) 展神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 405,
+          "term_id": "06.1127"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "facial nerve",
       "zh": "面神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (七) 面神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 429,
+          "term_id": "06.1128"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vestibulocochlear nerve",
       "zh": "前庭蜗神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (八) 前庭蜗神经",
+          "evidence_type": "bilingual-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "glossopharyngeal nerve",
       "zh": "舌咽神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (九) 舌咽神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 432,
+          "term_id": "06.1158"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "vagus nerve",
       "zh": "迷走神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (十) 迷走神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 492,
+          "term_id": "06.1179"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "accessory nerve",
       "zh": "副神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (十一) 副神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 405,
+          "term_id": "06.1208"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "hypoglossal nerve",
       "zh": "舌下神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (十二) 舌下神经",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 434,
+          "term_id": "06.1212"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "median nerve",
       "zh": "正中神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (三) 臂丛",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 452,
+          "term_id": "06.0895"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "ulnar nerve",
       "zh": "尺神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (三) 臂丛",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 491,
+          "term_id": "06.0904"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "radial nerve",
       "zh": "桡神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (三) 臂丛",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 471,
+          "term_id": "06.0913"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "sciatic nerve",
       "zh": "坐骨神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (六) 骶丛",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 475,
+          "term_id": "06.0981"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "femoral nerve",
       "zh": "股神经",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / 2. 腰丛的分支",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 429,
+          "term_id": "06.0960"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "brachial plexus",
       "zh": "臂丛",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (一) 概述",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 415,
+          "term_id": "06.0869"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "cornea",
       "zh": "角膜",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / (一) 眼球壁",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 421,
+          "term_id": "07.0020"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "sclera",
       "zh": "巩膜",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / (一) 眼球壁",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 475,
+          "term_id": "07.0011"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "iris",
       "zh": "虹膜",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / (一) 眼球壁",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 442,
+          "term_id": "07.0038"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "retina",
       "zh": "视网膜",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / (一) 眼球壁",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 472,
+          "term_id": "07.0050"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "lens",
       "zh": "晶状体",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / （二）眼球的内容物",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 447,
+          "term_id": "07.0072"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "cochlea",
       "zh": "耳蜗",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第二节｜前庭蜗器 / (一) 骨迷路",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 420,
+          "term_id": "07.0340"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "incus",
       "zh": "砧骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第二节｜前庭蜗器 / 2. 鼓室内的结构",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 435,
+          "term_id": "07.0235"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "malleus",
       "zh": "锤骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第二节｜前庭蜗器 / 2. 鼓室内的结构",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 449,
+          "term_id": "07.0240"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "stapes",
       "zh": "镫骨",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第二节｜前庭蜗器 / 2. 鼓室内的结构",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "07.0230"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "deltoid",
       "zh": "三角肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）上肢带肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 424,
+          "term_id": "02.1627"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "trapezius",
       "zh": "斜方肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 背肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 489,
+          "term_id": "02.1509"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "sternocleidomastoid",
       "zh": "胸锁乳突肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）颈浅肌与颈外侧肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "02.1465"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "pectoralis major",
       "zh": "胸大肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 1. 胸上肢肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 462,
+          "term_id": "02.1558"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "pectoralis minor",
       "zh": "胸小肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 1. 胸上肢肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 462,
+          "term_id": "02.1562"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "latissimus dorsi",
       "zh": "背阔肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 背肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 446,
+          "term_id": "02.1511"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "serratus anterior",
       "zh": "前锯肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 1. 胸上肢肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 476,
+          "term_id": "02.1566"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "biceps brachii",
       "zh": "肱二头肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (二) 臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 414,
+          "term_id": "02.1633"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "triceps brachii",
       "zh": "肱三头肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (二) 臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 489,
+          "term_id": "02.1640"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "brachialis",
       "zh": "肱肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (二) 臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 415,
+          "term_id": "02.1639"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "brachioradialis",
       "zh": "肱桡肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 415,
+          "term_id": "02.1662"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "rectus abdominis",
       "zh": "腹直肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （四）腹肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 471,
+          "term_id": "02.1594"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "external oblique",
       "zh": "腹外斜肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （三）骨骼肌的命名",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "internal oblique",
       "zh": "腹内斜肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （四）腹肌",
+          "evidence_type": "chinese-context"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "gluteus maximus",
       "zh": "臀大肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 432,
+          "term_id": "02.1736"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "gluteus medius",
       "zh": "臀中肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 432,
+          "term_id": "02.1737"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "gluteus minimus",
       "zh": "臀小肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 432,
+          "term_id": "02.1738"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "sartorius",
       "zh": "缝匠肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 474,
+          "term_id": "02.1749"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "rectus femoris",
       "zh": "股直肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 471,
+          "term_id": "02.1751"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "biceps femoris",
       "zh": "股二头肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 414,
+          "term_id": "02.1765"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "semitendinosus",
       "zh": "半腱肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 475,
+          "term_id": "02.1768"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "semimembranosus",
       "zh": "半膜肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 475,
+          "term_id": "02.1769"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "gastrocnemius",
       "zh": "腓肠肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 3. 后群 后群分浅、深两层(图 1-115)。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 432,
+          "term_id": "02.1777"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "soleus",
       "zh": "比目鱼肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 3. 后群 后群分浅、深两层(图 1-115)。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 476,
+          "term_id": "02.1780"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "tibialis anterior",
       "zh": "胫骨前肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （三）小腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "02.1770"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": true
     },
     {
       "en": "masseter",
       "zh": "咬肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）咀嚼肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 450,
+          "term_id": "02.1449"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "temporalis",
       "zh": "颞肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）咀嚼肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 486,
+          "term_id": "02.1453"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
     },
     {
       "en": "orbicularis oculi",
       "zh": "眼轮匝肌",
       "status": "textbook-matched",
-      "source": "系统解剖学中文术语人工匹配；需按所用教材版本复核",
-      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+      "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 面肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 459,
+          "term_id": "02.1424"
+        }
+      ],
+      "aliases_zh": [],
+      "allow_side": false
+    },
+    {
+      "en": "subscapularis",
+      "zh": "肩胛下肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）上肢带肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 480,
+          "term_id": "02.1632"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "levator scapulae",
+      "zh": "肩胛提肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 背肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 448,
+          "term_id": "02.1514"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "tibialis posterior",
+      "zh": "胫骨后肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 3. 后群 后群分浅、深两层(图 1-115)。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "02.1785"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "iliotibial tract",
+      "zh": "髂胫束",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 435,
+          "term_id": "02.1804"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "supraspinatus",
+      "zh": "冈上肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）上肢带肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 485,
+          "term_id": "02.1628"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "infraspinatus",
+      "zh": "冈下肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）上肢带肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 438,
+          "term_id": "02.1629"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "aliases_en": [
+        "infraspinatus muscle"
+      ],
+      "allow_side": true
+    },
+    {
+      "en": "teres major",
+      "zh": "大圆肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）上肢带肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 487,
+          "term_id": "02.1631"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "teres minor",
+      "zh": "小圆肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （一）上肢带肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 487,
+          "term_id": "02.1630"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "psoas major",
+      "zh": "腰大肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 469,
+          "term_id": "02.1734"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "iliacus",
+      "zh": "髂肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 435,
+          "term_id": "02.1733"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "gracilis",
+      "zh": "股薄肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 432,
+          "term_id": "02.1763"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "adductor longus",
+      "zh": "长收肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 406,
+          "term_id": "02.1759"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "adductor brevis",
+      "zh": "短收肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 406,
+          "term_id": "02.1760"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "adductor magnus",
+      "zh": "大收肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 406,
+          "term_id": "02.1761"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "pectineus",
+      "zh": "耻骨肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 462,
+          "term_id": "02.1758"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "piriformis",
+      "zh": "梨状肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 464,
+          "term_id": "02.1742"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "obturator internus",
+      "zh": "闭孔内肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 458,
+          "term_id": "02.1745"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "obturator externus",
+      "zh": "闭孔外肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (一) 髋肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 457,
+          "term_id": "02.1764"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "vastus lateralis",
+      "zh": "股外侧肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 492,
+          "term_id": "02.1754"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "vastus medialis",
+      "zh": "股内侧肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 492,
+          "term_id": "02.1756"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "vastus intermedius",
+      "zh": "股中间肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）大腿肌",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 492,
+          "term_id": "02.1755"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "coracobrachialis",
+      "zh": "喙肱肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (二) 臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 421,
+          "term_id": "02.1638"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "anconeus",
+      "zh": "肘肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第三节｜周围神经系统 / (三) 臂丛",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 407,
+          "term_id": "02.1646"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "supinator",
+      "zh": "旋后肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 484,
+          "term_id": "02.1671"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "pronator teres",
+      "zh": "旋前圆肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 469,
+          "term_id": "02.1648"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "pronator quadratus",
+      "zh": "旋前方肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 469,
+          "term_id": "02.1661"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "palmaris longus",
+      "zh": "掌长肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 460,
+          "term_id": "02.1652"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "flexor carpi radialis",
+      "zh": "桡侧腕屈肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 430,
+          "term_id": "02.1651"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "flexor carpi ulnaris",
+      "zh": "尺侧腕屈肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 430,
+          "term_id": "02.1653"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "extensor carpi radialis longus",
+      "zh": "桡侧腕长伸肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "02.1663"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "extensor carpi radialis brevis",
+      "zh": "桡侧腕短伸肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "02.1664"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "extensor carpi ulnaris",
+      "zh": "尺侧腕伸肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "02.1668"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "flexor digitorum superficialis",
+      "zh": "指浅屈肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 430,
+          "term_id": "02.1656"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "extensor digitorum",
+      "zh": "指伸肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "02.1665"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "extensor digitorum longus",
+      "zh": "趾长伸肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （三）小腿肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 428,
+          "term_id": "02.1771"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "flexor digitorum longus",
+      "zh": "趾长屈肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / 3. 后群 后群分浅、深两层(图 1-115)。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 430,
+          "term_id": "02.1786"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "abductor pollicis longus",
+      "zh": "拇长展肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / (三) 前臂肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 405,
+          "term_id": "02.1672"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "sternohyoid",
+      "zh": "胸骨舌骨肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "02.1492"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "sternothyroid",
+      "zh": "胸骨甲状肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 478,
+          "term_id": "02.1496"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "thyrohyoid",
+      "zh": "甲状舌骨肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 488,
+          "term_id": "02.1497"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "omohyoid",
+      "zh": "肩胛舌骨肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 458,
+          "term_id": "02.1493"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "digastric",
+      "zh": "二腹肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 425,
+          "term_id": "02.1482"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "mylohyoid",
+      "zh": "下颌舌骨肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 455,
+          "term_id": "02.1486"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "stylohyoid",
+      "zh": "茎突舌骨肌",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第三节｜骨骼肌 / （二）颈前肌",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 479,
+          "term_id": "02.1485"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "pancreatic duct",
+      "zh": "胰管",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / （二）胰的分部",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 460,
+          "term_id": "03.0395"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "cystic duct",
+      "zh": "胆囊管",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / 胆囊分底、体、颈、管4部分(图2-31)。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 423,
+          "term_id": "03.0375"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "common hepatic duct",
+      "zh": "肝总管",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / （二）肝管和肝总管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 420,
+          "term_id": "03.0362"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "right hepatic duct",
+      "zh": "肝右管",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / 二、肝外胆道系统",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 473,
+          "term_id": "03.0363"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "left hepatic duct",
+      "zh": "肝左管",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "02-第二章 消化系统 / 第二节｜消化腺 / 二、肝外胆道系统",
+          "evidence_type": "chinese-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 446,
+          "term_id": "03.0366"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "hepatic portal vein",
+      "zh": "肝门静脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "07-第七章 脉管系统 / 第一节｜心血管系统 / (2) 上肢静脉",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 434,
+          "term_id": "05.1186"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "pineal body",
+      "zh": "松果体",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / （三）间脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 464,
+          "term_id": "04.0019"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 464,
+          "term_id": "06.0460"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "corpus callosum",
+      "zh": "胼胝体",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (四) 端脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 422,
+          "term_id": "06.0742"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "anterior commissure",
+      "zh": "前连合",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (2) 脑室系统",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 408,
+          "term_id": "06.0756"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "lateral ventricle",
+      "zh": "侧脑室",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (四) 端脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 446,
+          "term_id": "06.0779"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "third ventricle",
+      "zh": "第三脑室",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / （三）间脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 487,
+          "term_id": "06.0560"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "fourth ventricle",
+      "zh": "第四脑室",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / (2) 脑干的背侧面",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 430,
+          "term_id": "06.0304"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "interventricular foramen",
+      "zh": "室间孔",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / （三）间脑",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 441,
+          "term_id": "06.0784"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "basilar artery",
+      "zh": "基底动脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 1. 脑的血管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 414,
+          "term_id": "05.0426"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "anterior cerebral artery",
+      "zh": "大脑前动脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 1. 脑的血管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 408,
+          "term_id": "05.0376"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "middle cerebral artery",
+      "zh": "大脑中动脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 1. 脑的血管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 454,
+          "term_id": "05.0392"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "posterior cerebral artery",
+      "zh": "大脑后动脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 1. 脑的血管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 465,
+          "term_id": "05.0435"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "anterior communicating artery",
+      "zh": "前交通动脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 1. 脑的血管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 408,
+          "term_id": "05.0381"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "posterior communicating artery",
+      "zh": "后交通动脉",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "09-第九章 神经系统 / 第二节｜中枢神经系统 / 1. 脑的血管",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 465,
+          "term_id": "05.0361"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "choroid",
+      "zh": "脉络膜",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / (一) 眼球壁",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 419,
+          "term_id": "07.0027"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "vitreous body",
+      "zh": "玻璃体",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / （二）眼球的内容物",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 494,
+          "term_id": "07.0066"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "lacrimal gland",
+      "zh": "泪腺",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / (三) 泪器",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 443,
+          "term_id": "07.0137"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "nasolacrimal duct",
+      "zh": "鼻泪管",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / （三）颅的整体观",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 456,
+          "term_id": "07.0150"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "lacrimal sac",
+      "zh": "泪囊",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "08-第八章 感觉器 / 第一节｜视器 / 2. 泪道",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 443,
+          "term_id": "07.0148"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": true
+    },
+    {
+      "en": "metacarpal bone",
+      "zh": "掌骨",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / (4) 手骨: 包括腕骨、掌骨和指骨 (图 1-40)。",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 453,
+          "term_id": "02.0656"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
+    },
+    {
+      "en": "metatarsal bone",
+      "zh": "跖骨",
+      "status": "reference-matched",
+      "sources": [
+        {
+          "source_id": "system-anatomy-10",
+          "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 自由下肢骨",
+          "evidence_type": "bilingual-context"
+        },
+        {
+          "source_id": "fudan-anatomy-2013",
+          "pdf_page": 454,
+          "term_id": "02.0862"
+        }
+      ],
+      "aliases_zh": [],
+      "review_note": "中英条目与教材中文均已定位；未经解剖教师独立审定",
+      "allow_side": false
     }
-  ]
+  ],
+  "schema_version": 2,
+  "sources": {
+    "system-anatomy-10": {
+      "title": "系统解剖学（第10版）",
+      "role": "课堂中文术语定位；中英对应由人工核对",
+      "redistribution": "只记录术语及章节定位，不包含教材正文或图片",
+      "kind": "textbook"
+    },
+    "fudan-anatomy-2013": {
+      "title": "复旦大学公开人体解剖学名词PDF（标年2013）",
+      "url": "https://xtjp.fudan.edu.cn/Upload/Files/201804100314393640155.pdf",
+      "accessed": "2026-10-02",
+      "sha256": "1a29ca3fe95cab6a43a3748f69c28476d577c4b455158434a3279a84a0e64160",
+      "role": "逐项中英对应参考；不宣称等同于现行最终标准",
+      "redistribution": "仅引用选定事实性术语对应和条目定位，不分发源PDF、定义或完整词库",
+      "kind": "bilingual-reference"
+    }
+  },
+  "components": {
+    "proximal phalanx": [
+      {
+        "zh": "近节指骨",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 469,
+        "term_id": "02.0662"
+      },
+      {
+        "zh": "近节趾骨",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 469,
+        "term_id": "02.0874"
+      }
+    ],
+    "middle phalanx": [
+      {
+        "zh": "中节指骨",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 454,
+        "term_id": "02.0663"
+      },
+      {
+        "zh": "中节趾骨",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 454,
+        "term_id": "02.0875"
+      }
+    ],
+    "distal phalanx": [
+      {
+        "zh": "远节指骨",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 425,
+        "term_id": "02.0664"
+      },
+      {
+        "zh": "远节趾骨",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 425,
+        "term_id": "02.0876"
+      }
+    ],
+    "thumb": [
+      {
+        "zh": "拇指",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 488,
+        "term_id": "01.0158"
+      }
+    ],
+    "index finger": [
+      {
+        "zh": "示指",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 435,
+        "term_id": "01.0159"
+      }
+    ],
+    "middle finger": [
+      {
+        "zh": "中指",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 454,
+        "term_id": "01.0160"
+      }
+    ],
+    "ring finger": [
+      {
+        "zh": "环指",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 473,
+        "term_id": "01.0161"
+      }
+    ],
+    "little finger": [
+      {
+        "zh": "小指",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 448,
+        "term_id": "01.0162"
+      }
+    ],
+    "great toe": [
+      {
+        "zh": "拇趾",
+        "source_id": "fudan-anatomy-2013",
+        "pdf_page": 433,
+        "term_id": "01.0195"
+      }
+    ]
+  }
 }

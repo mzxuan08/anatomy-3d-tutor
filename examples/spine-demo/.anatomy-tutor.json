@@ -1,0 +1,14 @@
+{
+  "format": "anatomy-3d-tutor-v1",
+  "source_manifest": "atlas.json",
+  "source_manifest_sha256": "d6979fc62cf18fa4f08a9e6efae8fdac9ec383c5a1f3c757920125ac758429fe",
+  "source_chunk_sha256": {
+    "11": "e8c1afe7f30fe710ad164ec9cd2287a32881606e7eb590af47d76b3f84405027",
+    "12": "61a6c8da89bb20df50c575964ac81aa4090eabfc2cb27ad2155aea325f31c6c0",
+    "13": "4c51b6be85d5b705d2b52b79b9ad1cdae0b65ad03c9402a2f2673c7633fd94f3"
+  },
+  "sex": "male",
+  "mesh_count": 25,
+  "sha256": "a703956e20020d2c086405c995cb373b6492c62e7367655304b7acd77429fa23",
+  "note": "缓冲区检查通过；未经过专业解剖学几何审定"
+}

@@ -27,12 +27,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Tenth thoracic vertebra",
         "zh": "第十胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -59,12 +74,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Eleventh thoracic vertebra",
         "zh": "第十一胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -91,12 +121,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Twelfth thoracic vertebra",
         "zh": "第十二胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -123,12 +168,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "First lumbar vertebra",
         "zh": "第一腰椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -155,12 +215,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "First thoracic vertebra",
         "zh": "第一胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -187,12 +262,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Second lumbar vertebra",
         "zh": "第二腰椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -219,12 +309,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Second thoracic vertebra",
         "zh": "第二胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -251,12 +356,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Third cervical vertebra",
         "zh": "第三颈椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -283,12 +403,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Third lumbar vertebra",
         "zh": "第三腰椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -315,12 +450,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Third thoracic vertebra",
         "zh": "第三胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -347,12 +497,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Fourth cervical vertebra",
         "zh": "第四颈椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -379,12 +544,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Fourth lumbar vertebra",
         "zh": "第四腰椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -411,12 +591,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Fourth thoracic vertebra",
         "zh": "第四胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -443,12 +638,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Fifth cervical vertebra",
         "zh": "第五颈椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -475,12 +685,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Fifth lumbar vertebra",
         "zh": "第五腰椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -507,12 +732,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Fifth thoracic vertebra",
         "zh": "第五胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -539,12 +779,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Sixth cervical vertebra",
         "zh": "第六颈椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -571,12 +826,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Sixth thoracic vertebra",
         "zh": "第六胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -603,12 +873,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Seventh cervical vertebra",
         "zh": "第七颈椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -635,12 +920,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Seventh thoracic vertebra",
         "zh": "第七胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -667,12 +967,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Eighth thoracic vertebra",
         "zh": "第八胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -699,12 +1014,27 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
         "en": "Ninth thoracic vertebra",
         "zh": "第九胸椎",
         "status": "derived",
-        "rule": "课件分部与编号＋原始英文序数",
-        "source": "用户躯干骨课件，PDF第7、10–13页"
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / （一）骨的分类",
+            "evidence_type": "chinese-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 493,
+            "term_id": "02.0440"
+          }
+        ],
+        "rule": "限定颈7/胸12/腰5的编号模板，不处理变异",
+        "aliases_zh": [],
+        "note": "",
+        "review_note": "仅作限定命名组合；不是逐项医学审定"
       }
     },
     {
@@ -731,12 +1061,21 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
-        "en": "atlas",
+        "en": "Atlas",
         "zh": "寰椎",
         "status": "textbook-matched",
-        "source": "系统解剖学教材术语人工匹配；需按版本复核",
-        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+            "evidence_type": "bilingual-context"
+          }
+        ],
+        "aliases_zh": [],
+        "allow_side": false
       }
     },
     {
@@ -763,12 +1102,21 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
-        "en": "axis",
+        "en": "Axis",
         "zh": "枢椎",
         "status": "textbook-matched",
-        "source": "系统解剖学教材术语人工匹配；需按版本复核",
-        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+            "evidence_type": "bilingual-context"
+          }
+        ],
+        "aliases_zh": [],
+        "allow_side": false
       }
     },
     {
@@ -795,15 +1143,46 @@
         ]
       ],
       "original_system": "skeletal",
+      "teaching_system": "skeletal",
       "terminology": {
-        "en": "sacrum",
+        "en": "Sacrum",
         "zh": "骶骨",
         "status": "textbook-matched",
-        "source": "系统解剖学教材术语人工匹配；需按版本复核",
-        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定"
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+            "evidence_type": "bilingual-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 474,
+            "term_id": "02.0485"
+          }
+        ],
+        "aliases_zh": [],
+        "allow_side": false
       }
     }
   ],
+  "terminology_sources": {
+    "system-anatomy-10": {
+      "title": "系统解剖学（第10版）",
+      "role": "课堂中文术语定位；中英对应由人工核对",
+      "redistribution": "只记录术语及章节定位，不包含教材正文或图片",
+      "kind": "textbook"
+    },
+    "fudan-anatomy-2013": {
+      "title": "复旦大学公开人体解剖学名词PDF（标年2013）",
+      "url": "https://xtjp.fudan.edu.cn/Upload/Files/201804100314393640155.pdf",
+      "accessed": "2026-10-02",
+      "sha256": "1a29ca3fe95cab6a43a3748f69c28476d577c4b455158434a3279a84a0e64160",
+      "role": "逐项中英对应参考；不宣称等同于现行最终标准",
+      "redistribution": "仅引用选定事实性术语对应和条目定位，不分发源PDF、定义或完整词库",
+      "kind": "bilingual-reference"
+    }
+  },
   "chunks": [
     {
       "url": "models/geometry.bin",

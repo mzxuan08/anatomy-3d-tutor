@@ -13,6 +13,7 @@ from pathlib import Path
 import re
 import shutil
 import sys
+import unicodedata
 
 ROOT = Path(__file__).resolve().parents[1]
 VIEWS = {'front', 'back', 'left', 'right', 'top', 'bottom', 'oblique'}
@@ -43,26 +44,109 @@ def load_atlas(project, sex):
     return folder, atlas
 
 @functools.lru_cache(maxsize=1)
+def term_data():
+    return read_json(ROOT / 'assets/terms-zh.json')
+
 def term_records():
-    return read_json(ROOT / 'assets/terms-zh.json')['records']
+    return term_data()['records']
+
+def normalized(value):
+    value = ' '.join(unicodedata.normalize('NFKC', value).casefold().split())
+    values = dict(zip(CHINESE, range(1,13)))
+    return re.sub(r'第(十二|十一|十|九|八|七|六|五|四|三|二|一)(?=颈椎|胸椎|腰椎|肋|掌骨|跖骨|脑室|趾|指)', lambda m:f'第{values[m[1]]}', value)
+
+@functools.lru_cache(maxsize=1)
+def term_index():
+    result = {}
+    for record in term_records():
+        for name in [record['en'], *record.get('aliases_en', [])]:
+            key = normalized(name)
+            if key in result:
+                raise ValueError(f'术语英文键或别名重复：{name}')
+            result[key] = record
+    return result
+
+def supported(record):
+    if record.get('status') not in {'textbook-matched', 'course-matched', 'reference-matched'} or not record.get('zh'):
+        return False
+    refs = record.get('sources', [])
+    sources = term_data().get('sources', {})
+    if not refs or not all(ref.get('source_id') in sources and (ref.get('locator') or (ref.get('term_id') and ref.get('pdf_page'))) for ref in refs):
+        return False
+    kinds = {sources[ref['source_id']].get('kind') for ref in refs}
+    required = {'textbook-matched':{'textbook'}, 'course-matched':{'course'}, 'reference-matched':{'textbook','bilingual-reference'}}[record['status']]
+    return required.issubset(kinds)
+
+def derived(name, zh, records, rule, aliases=None):
+    refs = []
+    for record in records:
+        for ref in record.get('sources', []):
+            if ref not in refs:
+                refs.append(dict(ref))
+    if not refs:
+        return None
+    return {'en':name, 'zh':zh, 'status':'derived', 'sources':refs, 'rule':rule, 'aliases_zh':aliases or [], 'note':'；'.join(r['note'] for r in records if r.get('note')), 'review_note':'仅作限定命名组合；不是逐项医学审定'}
 
 def terminology(name):
-    records = term_records()
-    key = name.casefold().strip()
-    direct = next((r for r in records if r['en'].casefold() == key), None)
+    records = term_index()
+    key = normalized(name)
+    direct = records.get(key)
     if direct:
-        return dict(direct)
+        if supported(direct):
+            return {**direct, 'en':name}
+        return {'en':name, 'zh':None, 'status':'review-needed', 'sources':direct.get('sources', []), 'review_note':'译名或证据待复核，保留原始英文'}
     for side, zh in [('right ', '右'), ('left ', '左')]:
         if key.startswith(side):
-            base = next((r for r in records if r['en'].casefold() == key[len(side):]), None)
-            if base:
-                return {**base, 'en': name, 'zh': zh + base['zh'], 'status': 'derived', 'rule': '侧别＋已匹配基词'}
+            base = records.get(key[len(side):])
+            if base and supported(base) and base.get('allow_side'):
+                return derived(name, zh + base['zh'], [base], '明确左右侧别＋允许侧别的已匹配基词', [zh+a for a in base.get('aliases_zh', [])])
     match = re.fullmatch(r'(\w+) (cervical|thoracic|lumbar) vertebra', key)
     if match and match[1] in ORDINALS:
         ordinal = ORDINALS.index(match[1])
         if ordinal < {'cervical':7, 'thoracic':12, 'lumbar':5}[match[2]]:
-            return {'en':name, 'zh':f'第{CHINESE[ordinal]}'+{'cervical':'颈椎','thoracic':'胸椎','lumbar':'腰椎'}[match[2]], 'status':'derived', 'rule':'课件分部与编号＋原始英文序数', 'source':'用户躯干骨课件，PDF第7、10–13页'}
-    return {'en':name, 'zh':None, 'status':'unmatched', 'source':None}
+            base = records.get('vertebra')
+            if base and supported(base):
+                return derived(name, f'第{CHINESE[ordinal]}'+{'cervical':'颈椎','thoracic':'胸椎','lumbar':'腰椎'}[match[2]], [base], '限定颈7/胸12/腰5的编号模板，不处理变异')
+    match = re.fullmatch(r'(left|right) (\w+) (rib|costal cartilage|metacarpal bone|metatarsal bone)', key)
+    if match and match[2] in ORDINALS:
+        ordinal = ORDINALS.index(match[2])
+        base = records.get(match[3])
+        if ordinal < {'rib':12, 'costal cartilage':10, 'metacarpal bone':5, 'metatarsal bone':5}[match[3]] and base and supported(base):
+            prefix = {'left':'左', 'right':'右'}[match[1]] + f'第{CHINESE[ordinal]}'
+            return derived(name, prefix+base['zh'], [base], '明确左右与序数＋限定肋/肋软骨/掌跖骨模板', [prefix+a for a in base.get('aliases_zh',[])])
+    match = re.fullmatch(r'(proximal|middle|distal) phalanx of (left|right) (thumb|index finger|middle finger|ring finger|little finger|big toe|second toe|third toe|fourth toe|little toe)', key)
+    if match:
+        section, side, digit = match.groups()
+        if section == 'middle' and digit in {'thumb','big toe'}:
+            return {'en':name, 'zh':None, 'status':'review-needed', 'review_note':'拇指/拇趾通常无中节指趾骨，不能机械翻译'}
+        foot = digit.endswith('toe')
+        label = {'thumb':'拇指','index finger':'示指','middle finger':'中指','ring finger':'环指','little finger':'小指','big toe':'拇趾','second toe':'第2趾','third toe':'第3趾','fourth toe':'第4趾','little toe':'第5趾'}[digit]
+        segment = {'proximal':'近节','middle':'中节','distal':'远节'}[section] + ('趾骨' if foot else '指骨')
+        components = term_data().get('components', {}).get(section+' phalanx', [])
+        refs = [r for r in components if r.get('zh') == segment and r.get('source_id') in term_data().get('sources', {}) and r.get('term_id') and r.get('pdf_page')]
+        digit_refs = term_data().get('components', {}).get('great toe' if digit=='big toe' else digit, [])
+        refs += [{k:v for k,v in r.items() if k!='zh'} for r in digit_refs]
+        if refs:
+            zh = {'left':'左','right':'右'}[side] + label + segment
+            return derived(name, zh, [{'sources':refs}], '原名明确区分指与趾、侧别、指序及节段；拇指/拇趾仅两节', [zh.replace('示指','食指')] if digit=='index finger' else [])
+    return {'en':name, 'zh':None, 'status':'unmatched', 'sources':[]}
+
+def term_search_text(name, term):
+    return normalized(' '.join([name, term.get('zh') or '', *term.get('aliases_zh', []), *term.get('aliases_en', [])]))
+
+def teaching_system(part):
+    system = part['system']
+    name = normalized(part['name'])
+    if system == 'skeletal' and re.search(r'gingiva|tooth row|tooth', name):
+        return 'oral_reference'
+    if system == 'cardiac' and name in {'third ventricle','fourth ventricle','interventricular foramen','left lateral ventricle','right lateral ventricle'}:
+        return 'nervous'
+    base = re.sub(r'^(left|right) ', '', name)
+    if system == 'skeletal' and base in {'subscapularis','tibialis posterior','levator scapulae'}:
+        return 'muscular'
+    if system == 'skeletal' and base == 'iliotibial tract':
+        return 'connective'
+    return system
 
 def resolve_ids(ids, atlas):
     parts = {p['id']:p for p in atlas['parts']}
@@ -110,6 +194,9 @@ def normalize_lesson(lesson, atlas):
     for key, value in lesson.get('labels', {}).items():
         if key not in selected or not isinstance(value, str):
             raise ValueError(f'无效或未使用的中文标签：{key}')
+        source = lesson.get('label_sources', {}).get(key)
+        if not isinstance(source, str) or not source.strip():
+            raise ValueError(f'中文课内标注需要label_sources中的具体依据：{key}')
     return selected
 
 def chunk_path(folder, chunk):
@@ -176,10 +263,12 @@ def build(args):
         check_part(original, data)
         part = dict(original)
         part['original_system'] = part['system']
+        part['teaching_system'] = teaching_system(part)
         part['chunk'] = 0
         part['terminology'] = terminology(part['name'])
         if key in lesson.get('labels', {}):
             part['lesson_label'] = lesson['labels'][key]
+            part['lesson_label_source'] = lesson['label_sources'][key]
         for field, length in [('positions',part['vertexCount']*12), ('normals',part['vertexCount']*6), ('indices',part['indexCount']*4)]:
             while len(packed) % 4:
                 packed.append(0)
@@ -191,7 +280,7 @@ def build(args):
     out.mkdir(parents=True, exist_ok=True)
     (out / 'models').mkdir(exist_ok=True)
     (out / 'models/geometry.bin').write_bytes(packed)
-    manifest = {'sex':sex, 'source':atlas.get('source'), 'scope':atlas.get('scope'), 'parts':parts, 'chunks':[{'url':'models/geometry.bin', 'bytes':len(packed)}]}
+    manifest = {'sex':sex, 'source':atlas.get('source'), 'scope':atlas.get('scope'), 'parts':parts, 'terminology_sources':term_data().get('sources', {}), 'chunks':[{'url':'models/geometry.bin', 'bytes':len(packed)}]}
     write_json(out / 'models/atlas.json', manifest)
     write_json(out / 'lesson.json', lesson)
     for name in ('index.html','viewer.js','style.css','search.css','preview.ps1','launch.cmd'):
@@ -205,7 +294,7 @@ def build(args):
     if license_path.is_file():
         shutil.copy2(license_path, out / 'HUMAN-ATLAS-LICENSE.txt')
     source_manifest = folder / ('atlas-female.json' if sex == 'female' else 'atlas.json')
-    receipt = {'format':'anatomy-3d-tutor-v1', 'source_manifest':str(source_manifest), 'source_manifest_sha256':hashlib.sha256(source_manifest.read_bytes()).hexdigest(), 'source_chunk_sha256':{str(ci):hashlib.sha256(data).hexdigest() for ci,data in chunks.items()}, 'sex':sex, 'mesh_count':len(parts), 'sha256':hashlib.sha256(packed).hexdigest(), 'note':'缓冲区检查通过；未经过专业解剖学几何审定'}
+    receipt = {'format':'anatomy-3d-tutor-v1', 'source_manifest':source_manifest.name, 'source_manifest_sha256':hashlib.sha256(source_manifest.read_bytes()).hexdigest(), 'source_chunk_sha256':{str(ci):hashlib.sha256(data).hexdigest() for ci,data in chunks.items()}, 'sex':sex, 'mesh_count':len(parts), 'sha256':hashlib.sha256(packed).hexdigest(), 'note':'缓冲区检查通过；未经过专业解剖学几何审定'}
     write_json(out / '.anatomy-tutor.json', receipt)
     print(json.dumps({'site':str(out), 'parts':len(parts), 'geometry_bytes':len(packed)}, ensure_ascii=False))
 
@@ -229,29 +318,46 @@ def validate_site(site):
 
 def search(args):
     _, atlas = load_atlas(args.atlas, args.sex)
-    query = args.query.casefold().strip()
+    query = normalized(args.query)
+    if not query:
+        raise ValueError('搜索词不能为空')
     rows = []
     for kind, records in [('mesh',atlas['parts']),('concept',atlas.get('concepts', []))]:
         for part in records:
             term = terminology(part['name'])
-            haystack = ' '.join([part['id'],part['name'],term.get('zh') or '']).casefold()
+            haystack = normalized(part['id']) + ' ' + term_search_text(part['name'], term)
             if query in haystack:
-                rows.append({'kind':kind,'id':part['id'],'en':part['name'],'zh':term.get('zh'),'term_status':term['status'],'system':part.get('system'),'elements':part.get('elements')})
-    rows.sort(key=lambda r:(query not in {r['id'].casefold(), r['en'].casefold(), (r['zh'] or '').casefold()},r['kind']!='mesh',r['en']))
+                rows.append({'kind':kind,'id':part['id'],'en':part['name'],'zh':term.get('zh'),'term_status':term['status'],'sources':term.get('sources', []),'rule':term.get('rule'),'aliases_zh':term.get('aliases_zh', []),'system':part.get('system'),'elements':part.get('elements')})
+    rows.sort(key=lambda r:(query not in {normalized(r['id']), normalized(r['en']), normalized(r['zh'] or ''), *map(normalized, r['aliases_zh'])},r['kind']!='mesh',r['en']))
     print(json.dumps({'sex':args.sex,'matches':len(rows),'results':rows[:args.limit]}, ensure_ascii=False, indent=2))
 
 def audit(args):
-    report = {'note':'术语/元数据筛查；不等同于几何和医学正确性认证', 'models':[]}
-    for sex in ['male','female']:
+    term_index()
+    report = {'note':'覆盖指可追溯中文名称（含限定规则派生）；不等同于医学或几何正确性认证', 'base_term_count':len(term_records()), 'terminology_sources':term_data().get('sources', {}), 'models':[]}
+    for sex in (['male','female'] if args.sex=='all' else [args.sex]):
+        if sex=='female' and args.sex=='all' and not (model_dir(args.atlas)/'atlas-female.json').is_file():
+            report['models'].append({'sex':sex,'availability':'missing','note':'该数据项目没有女性清单，未计算覆盖率'})
+            continue
         _, atlas = load_atlas(args.atlas, sex)
         counts = {}
         issues = []
+        by_system = {}
         for p in atlas['parts']:
-            state = terminology(p['name'])['status']
+            term = terminology(p['name'])
+            state = term['status']
             counts[state] = counts.get(state,0)+1
-            if p['system'] == 'skeletal' and re.search(r'gingiva|tooth row|tooth',p['name'],re.I):
-                issues.append({'id':p['id'], 'en':p['name'], 'original_system':'skeletal', 'issue':'骨骼展示分组包含口腔软组织/牙列，不能直接用于骨学全部骨集合', 'action':'保留原值；骨学主题显式选骨，不按整个system展示'})
-        report['models'].append({'sex':sex,'mesh_count':len(atlas['parts']), 'concept_count':len(atlas.get('concepts',[])), 'term_counts':counts, 'classification_flags':issues, 'scope':atlas.get('scope')})
+            group=by_system.setdefault(p['system'], {'mesh_count':0, 'covered':0, 'derived':0, 'unmatched_sample':[]})
+            group['mesh_count'] += 1
+            if term.get('zh'):
+                group['covered'] += 1
+                group['derived'] += int(state=='derived')
+            elif len(group['unmatched_sample'])<10:
+                group['unmatched_sample'].append({'id':p['id'],'en':p['name'],'status':state})
+            taught = teaching_system(p)
+            if taught != p['system']:
+                issues.append({'id':p['id'], 'en':p['name'], 'original_system':p['system'], 'teaching_system':taught, 'issue':'原展示分组与已核对的结构归属不同', 'action':'保留原始元数据；仅在伴学显示分组调整', 'term_sources':term.get('sources', [])})
+        covered = sum(group['covered'] for group in by_system.values())
+        report['models'].append({'sex':sex,'mesh_count':len(atlas['parts']), 'concept_count':len(atlas.get('concepts',[])), 'covered_mesh_count':covered, 'coverage_percent':round(covered/len(atlas['parts'])*100,2) if atlas['parts'] else 0, 'term_counts':counts, 'by_display_system':by_system, 'classification_flags':issues, 'scope':atlas.get('scope')})
     if args.out:
         Path(args.out).parent.mkdir(parents=True,exist_ok=True)
         write_json(args.out,report)
@@ -262,9 +368,7 @@ def explore(args):
     system_names = {'skeletal':'骨与骨连结','muscular':'肌','arterial':'动脉','venous':'静脉','nervous':'神经','digestive':'消化系统参考结构','respiratory':'呼吸系统参考结构','urinary':'泌尿系统参考结构','reproductive':'生殖系统参考结构','lymphatic':'淋巴参考结构','endocrine':'内分泌参考结构','integumentary':'体表参考','connective':'结缔组织参考','sensory':'感觉器官参考','cardiac':'心脏参考','brain':'脑参考','pregnancy':'妊娠参考','borrowed':'男性来源借用骨','donor-muscle':'第二女性来源下肢肌','oral_reference':'口腔参考结构'}
     groups = {}
     for part in atlas['parts']:
-        system = part['system']
-        if system == 'skeletal' and re.search(r'gingiva|tooth row|tooth',part['name'],re.I):
-            system = 'oral_reference'
+        system = teaching_system(part)
         groups.setdefault(system, []).append(part['id'])
     steps = []
     display_order = ['skeletal','muscular','arterial','venous','cardiac','digestive','respiratory','urinary','reproductive','endocrine','lymphatic','nervous','brain','sensory','connective','oral_reference','integumentary','borrowed','donor-muscle','pregnancy']
@@ -273,7 +377,7 @@ def explore(args):
         if args.system and system != args.system:
             continue
         label = system_names.get(system,system)
-        steps.append({'title':label,'body':'先在原位旋转观察整体分布。可用搜索找到具体结构，点击后单独观察，再返回整体。\n\n这是一套参考模型的可用结构，不代表该系统全部解剖结构；精细标志请与课件图核对。','show':ids,'highlight':[],'view':'front','layout':'native','source':'Human Atlas来源清单；教学展示已将牙龈和牙列另列为口腔参考，不修改源网格分类。','prompt':'提出你看不懂的位置、名称或关系，我会在聊天中针对这一处讲解。','quiz':False})
+        steps.append({'title':label,'body':'先在原位旋转观察整体分布。可用搜索找到具体结构，点击后单独观察，再返回整体。\n\n这是一套参考模型的可用结构，不代表该系统全部解剖结构；精细标志请与课件图核对。','show':ids,'highlight':[],'view':'front','layout':'native','source':'Human Atlas来源清单；伴学分组仅调整已确认的口腔、脑室及少量肌/筋膜归属，原始分组仍保留。','prompt':'提出你看不懂的位置、名称或关系，我会在聊天中针对这一处讲解。','quiz':False})
     if not steps:
         raise ValueError('没有匹配的展示分组')
     temporary = Path(args.lesson)
@@ -309,6 +413,7 @@ def main():
             p.add_argument('--query',required=True); p.add_argument('--sex',choices=['male','female'],default='male'); p.add_argument('--limit',type=int,default=15)
         elif name == 'audit':
             p.add_argument('--out')
+            p.add_argument('--sex',choices=['male','female','all'],default='all')
         elif name == 'build':
             p.add_argument('--lesson',required=True); p.add_argument('--out',required=True)
         else:

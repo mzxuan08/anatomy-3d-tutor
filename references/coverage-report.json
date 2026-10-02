@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "date": "2026-10-02",
+  "base_terms": {
+    "before": 215,
+    "after": 285
+  },
+  "note": "有资料依据的中文网格名称覆盖；包含限定规则派生，不代表独立医学审定。",
+  "models": [
+    {
+      "sex": "male",
+      "mesh_count": 2234,
+      "source_manifest_sha256": "d6979fc62cf18fa4f08a9e6efae8fdac9ec383c5a1f3c757920125ac758429fe",
+      "before_covered": 239,
+      "after_covered": 477,
+      "before_percent": 10.7,
+      "after_percent": 21.35,
+      "term_states": {
+        "unmatched": 1757,
+        "derived": 407,
+        "reference-matched": 15,
+        "textbook-matched": 55
+      }
+    },
+    {
+      "sex": "female",
+      "mesh_count": 1220,
+      "source_manifest_sha256": "349ad9085901db2cced179d467542271289ee0b259414a78814402d5ac374d2f",
+      "before_covered": 87,
+      "after_covered": 206,
+      "before_percent": 7.13,
+      "after_percent": 16.89,
+      "term_states": {
+        "unmatched": 1014,
+        "derived": 170,
+        "textbook-matched": 31,
+        "reference-matched": 5
+      }
+    }
+  ]
+}
