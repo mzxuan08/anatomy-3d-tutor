@@ -384,7 +384,7 @@ def build(args):
         for source in lesson.get('sources', []):
             source.pop('path', None)
     write_json(out / 'lesson.json', lesson)
-    for name in ('index.html','viewer.js','learning-tools.js','style.css','search.css','preview.ps1','launch.cmd'):
+    for name in ('index.html','viewer.js','learning-tools.js','study-record.js','style.css','search.css','preview.ps1','launch.cmd'):
         shutil.copy2(ROOT / 'assets/viewer' / name, out / name)
     shutil.copytree(ROOT / 'assets/vendor', out / 'vendor', dirs_exist_ok=True)
     attribution = folder.parent / 'ATTRIBUTION.md'
@@ -420,7 +420,7 @@ def validate_site(site):
             image = site / page['image']
             if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != receipt.get('course_page_sha256', {}).get(page['image']):
                 raise ValueError('课件页缺失或与构建记录不一致')
-    for file in ['learning-tools.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
+    for file in ['learning-tools.js','study-record.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
         if not (site / file).is_file():
             raise ValueError(f'缺失页面资源：{file}')
     return {'status':'passed', 'parts':len(ids), 'steps':len(lesson['steps']), 'note':'仅验证格式、引用与几何数据，不代表医学审定'}

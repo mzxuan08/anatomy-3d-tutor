@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+(async()=>{
+ const browser=await chromium.launch({executablePath:process.env.BROWSER_EXECUTABLE||undefined,headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']});
+ try{
+  const page=await browser.newPage({viewport:{width:1440,height:1000},acceptDownloads:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(process.env.ATLAS_TEST_URL||'http://127.0.0.1:8765/');await page.waitForFunction(()=>window.anatomyTutor?.status().triangles>0);
+  await page.locator('#step-menu').selectOption('2');await page.locator('.structures summary').click();await page.locator('#structure-list button').first().click();await page.locator('#pin-review').click();await page.locator('#pin-compare').click();
+  if(!await page.locator('#review-start').isVisible())await page.locator('#review-tray summary').click();await page.locator('#review-start').click();assert.equal(await page.locator('#record-save').isEnabled(),false);
+  await page.locator('#recall-note').fill('我的原回答与辨认依据');await page.locator('#review-reveal').click();await page.locator('#review-again').click();await page.locator('#practice-exit').click();
+  await page.locator('#record-tray summary').click();await page.locator('#record-save').click();assert.match(await page.locator('#record-status').innerText(),/已保存/);
+  const downloadPromise=page.waitForEvent('download');await page.locator('#record-download').click();const download=await downloadPromise,tmp=fs.mkdtempSync(path.join(os.tmpdir(),'anatomy-record-')),file=path.join(tmp,'record.json');await download.saveAs(file);const record=JSON.parse(fs.readFileSync(file,'utf8'));assert.equal(record.results[0][1].note,'我的原回答与辨认依据');assert.equal(record.results[0][1].rating,'again');
+  await page.reload();await page.waitForFunction(()=>window.anatomyTutor?.status().ready);assert.equal(await page.locator('#review-count').innerText(),'0');await page.locator('#record-tray summary').click();await page.locator('#record-resume').click();assert.equal(await page.locator('#review-count').innerText(),'1');assert.equal(await page.locator('#compare-count').innerText(),'1 / 4');assert.equal(await page.locator('#step-menu').inputValue(),'2');
+  await page.evaluate(()=>localStorage.clear());await page.reload();await page.waitForFunction(()=>window.anatomyTutor?.status().ready);await page.locator('#record-tray summary').click();assert.equal(await page.locator('#record-resume').isEnabled(),false);await page.locator('#record-file').setInputFiles(file);await page.waitForFunction(()=>document.getElementById('record-file').value==='');assert.equal(await page.locator('#review-count').innerText(),'1');
+  for(const mutation of [r=>r.lessonKey='other lesson',r=>r.review=['made-up-id'],r=>r.results[0][1].rating='mastered']){const bad=structuredClone(record);mutation(bad);const wrong=path.join(tmp,'wrong.json');fs.writeFileSync(wrong,JSON.stringify(bad));await page.locator('#record-file').setInputFiles(wrong);await page.waitForFunction(()=>document.getElementById('record-file').value==='');assert.match(await page.locator('#record-status').innerText(),/未导入/);assert.equal(await page.locator('#review-count').innerText(),'1');}
+  await page.locator('#review-tray summary').click();assert.equal(await page.locator('#review-weak').isEnabled(),true);assert.match(await page.locator('#review-list').innerText(),/还需再练/);
+  if(process.env.RECORD_SCREENSHOT){await page.locator('#record-save').click();await page.screenshot({path:process.env.RECORD_SCREENSHOT});}
+  await page.setViewportSize({width:320,height:844});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.locator('#review-weak').click();assert.equal(await page.locator('#practice-title').innerText(),'辨认 1 / 1');assert.equal(await page.locator('#record-save').isEnabled(),false);assert.deepEqual(errors,[]);
+  console.log(JSON.stringify({status:'passed',checks:['辨认期间禁用保存恢复','本机主动保存与刷新恢复','保存原回答及自评','JSON备份导入','其他课程及无效记录拒绝且清单不变','手机记录面板'],outputDir:tmp}));
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exit(1);});
+
