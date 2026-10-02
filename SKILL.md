@@ -43,6 +43,8 @@ description: Help clinical medical students understand and remember systematic a
 
 纠错应具体：混淆了哪两件事 → 正确关系 → 再观察哪里 → 换情境复测。没回答记未测，不虚构掌握度。会话内保留错点；仅当用户要求保存时在当前 outputs 或指定位置保存学习记录，不写 Codex 全局记忆。
 
+播放器的对比夹适合跨步骤比较少量易混结构；待复习可换角度辨认，先收原回答再核对。自评“能说出依据”不等于客观掌握；几何看不清时用课件图复核。页面清单默认临时，学生主动导出才保存复习卡。操作见 [references/viewer.md](references/viewer.md)。
+
 可选短复习卡：关键图、空间关系、易混点、检验题与来源。输出量随问题规模变化。临床联系仅用于理解解剖学基础，默认不展开治疗。
 
 ## 入口

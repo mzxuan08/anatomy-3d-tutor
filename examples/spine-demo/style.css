@@ -27,3 +27,13 @@ dialog{color:var(--ink);background:var(--paper);border:1px solid var(--border);b
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
 
 body.scene-focus #workspace{grid-template-columns:minmax(0,1fr);grid-template-rows:1fr}body.scene-focus #workspace .viewport{grid-column:1;grid-row:1}
+
+.study-tray{margin-top:16px;padding-top:10px;border-top:1px solid var(--border)}.study-tray>p{margin:6px 0 10px}.tray-row{display:flex;align-items:center;gap:6px;margin:5px 0}.tray-row .tray-name{flex:1;min-width:0;text-align:left;overflow-wrap:anywhere;font-size:11px;padding:8px}.tray-row .remove-item{flex-shrink:0;width:32px;height:32px;padding:0}.tray-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.tray-actions button{flex:1;min-width:95px}.selection-actions{border-top:1px solid var(--border);margin-top:18px;padding-top:16px;display:grid;gap:8px}.selection-actions p{margin:0;min-height:16px}.practice-panel{margin-top:22px;padding:16px;border:1px solid var(--tint-border);border-radius:13px;background:var(--tint)}.practice-panel h2{font-size:19px}.practice-panel .body{font-size:12px}.practice-panel textarea{width:100%;resize:vertical;border:1px solid var(--border);border-radius:9px;padding:12px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;line-height:1.7}.practice-panel textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}#practice-answer{padding:12px;background:var(--paper);border:1px solid var(--border);border-radius:10px;font-size:12px;line-height:1.85;white-space:pre-line;overflow-wrap:anywhere;margin-top:12px}
+body[data-practice="review"] .lesson-section,body[data-practice="review"] .structures,body[data-practice="review"] .resources,body[data-practice="review-summary"] .lesson-section,body[data-practice="review-summary"] .structures,body[data-practice="review-summary"] .resources{display:none}
+body[data-practice="compare"] .lesson-section{display:none}
+@media(max-width:760px){.practice-panel textarea{font-size:16px}.selection-actions button,.tray-actions button{min-height:42px}}
+
+body[data-practice="review"] .search-box,body[data-practice="review"] .study-tray,body[data-practice="review-summary"] .search-box,body[data-practice="review-summary"] #compare-tray,body[data-practice="compare"] .practice-disclaimer{display:none}
+body[data-practice="review"] .practice-panel{margin-top:0}body[data-practice="review-summary"] .learning-panel{display:flex;flex-direction:column}body[data-practice="review-summary"] .practice-panel{order:0;margin-top:0}body[data-practice="review-summary"] #review-tray{order:1}
+
+body.scene-focus #workspace .learning-panel,body.scene-focus #workspace .inspector{display:none}
