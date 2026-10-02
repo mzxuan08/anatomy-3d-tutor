@@ -1,28 +1,33 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>系统解剖学 · 3D伴学</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="search.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><title>系统解剖学 · 3D伴学</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="search.css"></head>
 <body>
-<header><div><span class="eyebrow">系统解剖学 · 理解与辨认</span><h1 id="lesson-title">系统解剖学 · 3D伴学</h1></div><span id="load-status" role="status">正在加载模型…</span></header>
-<main>
-<aside>
-  <p class="intro" id="intro"></p>
-  <label class="field-title" for="step-menu">学习步骤</label><select id="step-menu"></select>
-  <div class="step-number" id="step-number"></div><h2 id="step-title"></h2>
-  <p class="body" id="explanation"></p>
-  <div class="source" id="source"></div>
-  <section class="question" id="question-block"><span class="field-title">停下来想一想</span><p id="question"></p><details id="answer"><summary>查看答案与辨认依据</summary><p id="answer-text"></p></details></section>
-  <div class="navigation"><button id="previous">← 上一步</button><button class="primary" id="next">下一步 →</button></div>
-  <div class="search-box"><label class="field-title" for="search">查找本页结构</label><input id="search" type="search" placeholder="中文、英文或模型ID" autocomplete="off"><div id="search-results"></div></div>
-  <details class="structures"><summary>本步显示的结构</summary><div id="structure-list"></div></details>
-  <details class="resources"><summary>资料与模型来源</summary><div id="resources"></div><p>中文名称按资料匹配并标注状态；模型细节与几何准确性未经独立解剖教师审定。</p><a href="ATTRIBUTION.md" target="_blank" rel="noopener">模型来源与适用范围</a></details>
-</aside>
-<section class="viewport" aria-label="三维观察区">
- <div class="scene-toolbar"><div class="view-group" role="group" aria-label="观察方向"><button data-view="front">前面观</button><button data-view="back">后面观</button><button data-view="left">左侧观</button><button data-view="right">右侧观</button><button data-view="top">上面观</button><button data-view="oblique">斜面观</button></div><span id="view-status">斜面观</span></div>
- <div id="scene"><div id="mesh-labels" aria-hidden="true"></div></div>
- <div id="layout-notice" class="layout-notice" hidden>同尺度形态对比：位置已平移。判断毗邻请切回原位。</div>
- <div id="picked" class="picked" hidden></div>
- <div class="bottom-controls"><button id="names">隐藏名称</button><button id="isolate" disabled>单独观察</button><button id="layout">并排对比</button><button id="orbit">自动环绕</button><button id="fit">重置视角</button><span>拖动旋转 · 滚轮缩放 · 点击结构</span></div>
-</section>
+<header class="app-header">
+ <div class="brand"><div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3 28 10v13l-12 7-12-7V10L16 3Z"/><path d="m4 10 12 7 12-7M16 17v13M10 6.5l12 7v13"/></svg></div><div class="brand-text"><span class="eyebrow">系统解剖学 · 三维伴学</span><h1 id="lesson-title">解剖伴学</h1></div></div>
+ <div class="header-actions"><span id="load-status" role="status" aria-live="polite">正在加载模型</span><button id="theme" class="quiet" aria-label="切换深色模式" title="切换深色模式">深色</button><button id="focus-mode" class="quiet" aria-pressed="false" title="扩大观察区，Esc退出">专注模型</button><button id="help" class="icon-button" aria-label="操作指南与快捷键" title="操作指南">?</button></div>
+</header>
+<main id="workspace">
+ <aside class="learning-panel" aria-label="学习与查找">
+  <section class="search-box"><label class="field-title" for="search">查找结构 <span class="key-hint" aria-hidden="true">/</span></label><input id="search" type="search" placeholder="中文、英文或模型ID" autocomplete="off" aria-controls="search-results" aria-describedby="search-hint"><p id="search-hint" class="muted">支持常用名与数字编号，如“肾脏”“第3颈椎”</p><div id="search-results" aria-label="匹配的结构"></div></section>
+  <section class="lesson-section">
+   <div class="section-heading"><label class="field-title" for="step-menu">本次学习</label><span id="study-mode" class="mode-badge">观察模式</span></div><select id="step-menu" aria-label="选择学习步骤"></select>
+   <div id="step-progress" class="progress-track" role="progressbar" aria-label="当前步骤" aria-valuemin="1" aria-valuenow="1"><div id="progress-fill"></div></div>
+   <div class="step-number" id="step-number"></div><h2 id="step-title"></h2><p class="body" id="explanation"></p><div class="source" id="source"></div>
+   <section class="question" id="question-block"><span class="field-title">停下来想一想</span><p id="question"></p><details id="answer"><summary>查看答案与辨认依据</summary><p id="answer-text"></p></details></section>
+   <div class="navigation"><button id="previous">← 上一步</button><button class="primary" id="next">下一步 →</button></div>
+  </section>
+  <details class="structures"><summary>本步结构 <span id="visible-count" class="count-badge"></span></summary><div id="structure-list"></div></details>
+  <details class="resources"><summary>学习说明与资料来源</summary><p class="intro" id="intro"></p><div id="resources"></div><p>名称覆盖不代表医学准确率。模型细节未经独立解剖教师审定，精细辨认请对照课件。</p><a href="ATTRIBUTION.md" target="_blank" rel="noopener">模型来源与适用范围 ↗</a></details>
+ </aside>
+ <section class="viewport" aria-label="三维观察区">
+  <div class="scene-toolbar"><div class="view-group" role="group" aria-label="人体观察方向"><button data-view="front" title="前面观 · 1">前</button><button data-view="back" title="后面观 · 2">后</button><button data-view="left" title="人体左侧观 · 3">左</button><button data-view="right" title="人体右侧观 · 4">右</button><button data-view="top" title="上面观 · 5">上</button><button data-view="bottom" title="下面观">下</button><button data-view="oblique" title="斜面观 · 6">斜面</button></div><span id="view-status">斜面观</span></div>
+  <div id="scene"><div id="mesh-labels" aria-hidden="true"></div><div id="loading-cover" role="status"><span class="spinner" aria-hidden="true"></span><p id="loading-label">正在读取学习资料</p><small>首次载入需要读取三维模型</small></div></div>
+  <div id="layout-notice" class="layout-notice" hidden></div>
+  <div class="model-caption"><span>拖动旋转 · 滚轮或双指缩放 · 点击选择</span><button id="selected-chip" hidden title="查看所选结构详情"></button></div>
+  <div class="bottom-controls" role="group" aria-label="模型操作"><button id="names" title="切换名称 · H" aria-pressed="false">隐藏名称</button><button id="isolate" disabled aria-pressed="false">单独观察</button><button id="layout" aria-pressed="false">并排对比</button><button id="orbit" aria-pressed="false">自动环绕</button><button id="fit" class="quiet" title="重置视角 · R">重置视角</button></div>
+ </section>
+ <section id="inspector" class="inspector" aria-label="所选结构详情" hidden><div class="inspector-heading"><span class="field-title">所选结构</span><button id="close-inspector" class="icon-button" aria-label="关闭结构详情">×</button></div><div id="picked" aria-live="polite" hidden></div></section>
 </main>
+<dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-heading"><h2 id="help-title">从一个问题开始观察</h2><button id="close-help" class="icon-button" aria-label="关闭操作指南">×</button></div><p>查找一个结构，点击选择，再用“单独观察”看清形态。比较大小时用“并排对比”；判断位置与毗邻时回到原位。</p><p>视角始终按人体的前、后、左、右命名。无标签辨认时，搜索和名称隐藏，答案由你主动展开。</p><dl class="shortcuts"><div><dt><kbd>/</kbd></dt><dd>查找结构</dd></div><div><dt><kbd>1</kbd>–<kbd>6</kbd></dt><dd>前、后、左、右、上、斜面观</dd></div><div><dt><kbd>H</kbd> / <kbd>R</kbd></dt><dd>显示名称 / 重置视角</dd></div><div><dt><kbd>←</kbd> / <kbd>→</kbd></dt><dd>上一步 / 下一步</dd></div><div><dt><kbd>Esc</kbd></dt><dd>退出专注或关闭详情</dd></div></dl></dialog>
 <noscript>三维观察需要启用JavaScript。</noscript><script type="module" src="viewer.js"></script>
 </body></html>

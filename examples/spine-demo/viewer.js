@@ -16,29 +16,65 @@ function normalizeSearch(value){const nums={'一':1,'二':2,'三':3,'四':4,'五
 function searchKeys(part){return [displayName(part),part.name,part.id,...(acceptedTerm(part)?part.terminology.aliases_zh||[]:[]),...(acceptedTerm(part)?part.terminology.aliases_en||[]:[])].map(normalizeSearch);}
 function termSources(part){return (part.terminology?.sources||[]).map(ref=>{const source=atlas.terminology_sources?.[ref.source_id];return `${source?.title||ref.source_id}${ref.locator?' · '+ref.locator:''}${ref.pdf_page?' · PDF第'+ref.pdf_page+'页':''}${ref.term_id?' · 条目'+ref.term_id:''}${ref.evidence_type==='chinese-context'?'（仅中文提及，英文对应另核对）':ref.evidence_type==='bilingual-context'?'（同段中英对应）':''}`;}).join('\n');}
 function safeName(part){return showNames?displayName(part):`结构 ${[...meshes.keys()].indexOf(part.id)+1}`;}
-function detail(part){
- if(!showNames) return `${safeName(part)}\n请在聊天中说出名称和辨认依据，准备好后再查看答案。`;
+function renderPicked(){
+ const visible=!!picked;
+ $('inspector').hidden=!visible;$('picked').hidden=!visible;$('selected-chip').hidden=!visible;
+ $('workspace').classList.toggle('has-selection',visible);$('picked').replaceChildren();
+ if(!visible)return;
+ const part=picked.userData.part,root=$('picked');text('selected-chip',safeName(part)+' · 查看详情');
+ const add=(tag,value,className)=>{const el=document.createElement(tag);el.textContent=value;if(className)el.className=className;root.append(el);return el;};
+ add('h3',safeName(part));
+ if(!showNames){add('p','请说出名称和辨认依据，准备好后再显示名称核对。','picked-english');return;}
+ add('p',part.name+' · '+part.id,'picked-english');
+ const term=part.terminology||{};add('span',statuses[term.status]||'暂无有依据的中文名','term-badge'+(acceptedTerm(part)?'':' pending'));
+ const section=(title,value)=>{if(!value)return;const div=document.createElement('section');div.className='inspector-section';const h=document.createElement('h4'),p=document.createElement('p');h.textContent=title;p.textContent=value;div.append(h,p);root.append(div);};
+ section('课内标注依据',part.lesson_label_source);section('派生依据',term.rule);section('术语说明',term.note);section('术语来源',termSources(part)||'中文术语依据待补充');
  const reference=atlas.sex==='female'?(part.system==='borrowed'?'女性参考体上的男性来源借用骨':part.system==='donor-muscle'?'女性参考体上的第二女性来源下肢肌':'女性组合参考模型'):'男性参考模型';
- const term=part.terminology||{},source=termSources(part);
- return `${displayName(part)}\n${part.name} · ${part.id}\n术语状态：${statuses[term.status]||'未匹配'}${part.lesson_label_source?'；课内标注依据：'+part.lesson_label_source:''}${term.rule?'\n派生依据：'+term.rule:''}${term.note?'\n'+term.note:''}${source?'\n术语来源：\n'+source:'\n中文术语依据待补充'}\n${reference}`;
+ add('p',reference,'reference-note');
 }
+function focusMode(value){document.body.classList.toggle('scene-focus',value);$('focus-mode').setAttribute('aria-pressed',String(value));text('focus-mode',value?'退出专注':'专注模型');}
+function closeInspector(){
+ if(isolated){isolated=false;for(const mesh of meshes.values())mesh.visible=lesson.steps[stepIndex].show.includes(mesh.userData.part.id);setLayout('native');}
+ picked=null;$('isolate').disabled=true;$('isolate').classList.remove('active');$('isolate').setAttribute('aria-pressed','false');text('isolate','单独观察');
+ for(const mesh of meshes.values()){const highlighted=lesson.steps[stepIndex].highlight?.includes(mesh.userData.part.id);mesh.material.emissive.set(highlighted?'#3d614c':'#000000');mesh.material.emissiveIntensity=highlighted?.27:0;}
+ updateNames();renderPicked();
+}
+function setTheme(theme){document.documentElement.dataset.theme=theme;const label=theme==='dark'?'浅色':'深色';text('theme',label);$('theme').setAttribute('aria-label','切换'+label+'模式');$('theme').title='切换'+label+'模式';try{localStorage.setItem('anatomy-theme',theme);}catch{}}
+try{setTheme(localStorage.getItem('anatomy-theme')==='dark'?'dark':'light');}catch{setTheme('light');}
+$('theme').onclick=()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark');
+$('focus-mode').onclick=()=>focusMode(!document.body.classList.contains('scene-focus'));
+$('help').onclick=()=>$('help-dialog').showModal();$('close-help').onclick=()=>$('help-dialog').close();
+$('close-inspector').onclick=()=>closeInspector();
+$('selected-chip').onclick=()=>{focusMode(false);$('inspector').scrollIntoView({block:'nearest'});$('close-inspector').focus({preventScroll:true});};
+document.addEventListener('keydown',e=>{
+ if(!ready||$('help-dialog').open||e.ctrlKey||e.metaKey||e.altKey||e.target.closest('input,textarea,select,[contenteditable="true"]'))return;
+ const key=e.key.toLowerCase(),views=['front','back','left','right','top','oblique'];
+ if(key==='/'&&!$('search').disabled){e.preventDefault();focusMode(false);$('search').focus();}
+ else if(/^[1-6]$/.test(key)){e.preventDefault();fit(views[Number(key)-1]);}
+ else if(key==='h'){$('names').click();}else if(key==='r'){fit(lesson.steps[stepIndex].view||'oblique');}
+ else if(key==='arrowleft'&&stepIndex>0){e.preventDefault();setStep(stepIndex-1);}else if(key==='arrowright'&&stepIndex<lesson.steps.length-1){e.preventDefault();setStep(stepIndex+1);}
+ else if(key==='escape'){if(document.body.classList.contains('scene-focus'))focusMode(false);else if(picked)closeInspector();}
+});
 function updateNames(){
  text('names',showNames?'隐藏名称':'显示名称');
- $('names').classList.toggle('active',!showNames);
+ $('names').classList.toggle('active',!showNames);$('names').setAttribute('aria-pressed',String(!showNames));
+ text('study-mode',showNames?'观察模式':'无标签辨认');$('study-mode').classList.toggle('quiz',!showNames);
+ const visible=[...meshes.values()].filter(m=>m.visible);text('visible-count',visible.length);
  labelHost.replaceChildren();
  const list=$('structure-list');list.replaceChildren();
  for(const mesh of meshes.values()){
   if(!mesh.visible)continue;
-  const part=mesh.userData.part,button=document.createElement('button');button.className='structure-item';button.textContent=safeName(part);
+  const part=mesh.userData.part,button=document.createElement('button');button.className='structure-item';button.textContent=safeName(part);button.dataset.partId=part.id;button.classList.toggle('active',mesh===picked);button.setAttribute('aria-pressed',String(mesh===picked));
   if(showNames){const small=document.createElement('small');small.textContent=part.name;button.append(small);}
   button.addEventListener('click',()=>select(mesh));list.append(button);
-  if(showNames&&lesson.steps[stepIndex].show.length<=12){const el=document.createElement('span');el.className='mesh-label';el.textContent=displayName(part);el.dataset.id=part.id;labelHost.append(el);}
+  if(showNames&&visible.length<=8){const el=document.createElement('span');el.className='mesh-label';el.textContent=displayName(part);el.dataset.id=part.id;labelHost.append(el);}
  }
- if(picked){text('picked',detail(picked.userData.part));}
+ renderPicked();
  $('search').disabled=!showNames;$('search').placeholder=showNames?'中文、英文或模型ID':'辨认时隐藏名称搜索';$('search').value='';$('search-results').replaceChildren();
 }
 function select(mesh){
- picked=mesh;$('picked').hidden=false;text('picked',detail(mesh.userData.part));
+ picked=mesh;renderPicked();
+ document.querySelectorAll('#structure-list button').forEach(b=>{b.classList.toggle('active',b.dataset.partId===mesh.userData.part.id);b.setAttribute('aria-pressed',String(b.dataset.partId===mesh.userData.part.id));});
  $('isolate').disabled=false;
  for(const m of meshes.values()){const highlighted=lesson.steps[stepIndex].highlight?.includes(m.userData.part.id);m.material.emissive.set(m===mesh?'#326c57':highlighted?'#3d614c':'#000000');m.material.emissiveIntensity=m===mesh ? .48 : highlighted ? .27 : 0;}
 }
@@ -53,10 +89,10 @@ function fit(view=lastView,animate=true){
  camera.up.set(...(view==='top'?[0,0,1]:view==='bottom'?[0,0,-1]:[0,1,0]));
  const targetPosition=center.clone().add(new T.Vector3(...direction).normalize().multiplyScalar(distance));
  controls.minDistance=Math.max(radius*.25,.008);controls.maxDistance=Math.max(distance*8,1);
- if(animate&&camera.up.y===1){transition={start:performance.now(),from:camera.position.clone(),fromTarget:controls.target.clone(),position:targetPosition,target:center};}
+ if(animate&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&camera.up.y===1){transition={start:performance.now(),from:camera.position.clone(),fromTarget:controls.target.clone(),position:targetPosition,target:center};}
  else{transition=null;camera.position.copy(targetPosition);controls.target.copy(center);controls.update();}
  lastView=view;text('view-status',namesOfView[view]);
- document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===view));
+ document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);b.setAttribute('aria-pressed',String(b.dataset.view===view));});
 }
 function setLayout(next,animate=true){
  layout=next;const visible=lesson.steps[stepIndex].show.map(id=>meshes.get(id)).filter(m=>m?.visible);
@@ -67,9 +103,9 @@ function setLayout(next,animate=true){
   const box=mesh.geometry.boundingBox,width=box.max.x-box.min.x,center=box.getCenter(new T.Vector3());
   mesh.position.set(cursor+width/2-center.x,-center.y,-center.z);cursor+=width+gap;
  }}
- text('layout',layout==='native'?'并排对比':'返回原位');$('layout').classList.toggle('active',layout==='compare');$('layout-notice').hidden=layout!=='compare'&&!isolated;
+ text('layout',layout==='native'?'并排对比':'返回原位');$('layout').classList.toggle('active',layout==='compare');$('layout').setAttribute('aria-pressed',String(layout==='compare'));$('layout-notice').hidden=layout!=='compare'&&!isolated;
  text('layout-notice',layout==='compare'?'同尺度形态对比：位置已平移。判断毗邻请切回原位。':'正在单独观察所选结构；返回本步整体后再判断毗邻。');
- if(picked&&!picked.visible){picked=null;$('picked').hidden=true;}
+ if(picked&&!picked.visible){picked=null;renderPicked();}
  fit(lesson.steps[stepIndex].view||'oblique',animate);
 }
 function setStep(index){
@@ -77,17 +113,18 @@ function setStep(index){
  text('step-number',`步骤 ${String(stepIndex+1).padStart(2,'0')} / ${String(lesson.steps.length).padStart(2,'0')}`);
  text('step-title',step.title);text('explanation',step.body);text('source',step.source);text('question',step.prompt);text('answer-text',step.answer);
  $('question-block').hidden=!step.prompt;$('answer').hidden=!step.answer;$('answer').open=false;
+ $('step-progress').setAttribute('aria-valuemax',String(lesson.steps.length));$('step-progress').setAttribute('aria-valuenow',String(stepIndex+1));$('progress-fill').style.width=((stepIndex+1)/lesson.steps.length*100)+'%';
  $('step-menu').value=String(stepIndex);$('previous').disabled=stepIndex===0;$('next').disabled=stepIndex===lesson.steps.length-1;
- showNames=!step.quiz;picked=null;isolated=false;$('picked').hidden=true;$('isolate').disabled=true;text('isolate','单独观察');$('isolate').classList.remove('active');
+ showNames=!step.quiz;picked=null;isolated=false;$('picked').hidden=true;$('isolate').disabled=true;text('isolate','单独观察');$('isolate').classList.remove('active');$('isolate').setAttribute('aria-pressed','false');
  for(const mesh of meshes.values()){mesh.visible=step.show.includes(mesh.userData.part.id);mesh.material.emissive.set(step.highlight?.includes(mesh.userData.part.id)?'#3d614c':'#000000');mesh.material.emissiveIntensity=step.highlight?.includes(mesh.userData.part.id) ? .27 : 0;}
- controls.autoRotate=false;text('orbit','自动环绕');$('orbit').classList.remove('active');
+ controls.autoRotate=false;text('orbit','自动环绕');$('orbit').classList.remove('active');$('orbit').setAttribute('aria-pressed','false');
  setLayout(step.layout||'native');updateNames();
 }
 function renderLabels(){
  for(const el of labelHost.children){const mesh=meshes.get(el.dataset.id);if(!mesh?.visible){el.hidden=true;continue;}
   const center=mesh.geometry.boundingBox.getCenter(new T.Vector3()).add(mesh.position);center.project(camera);
   el.hidden=center.z>1||center.z< -1||Math.abs(center.x)>1.05||Math.abs(center.y)>1.05;
-  el.style.left=`${(center.x+1)*host.clientWidth/2}px`;el.style.top=`${(1-center.y)*host.clientHeight/2+36}px`;
+  el.style.left=`${(center.x+1)*host.clientWidth/2}px`;el.style.top=`${(1-center.y)*host.clientHeight/2}px`;
  }
 }
 function tick(now){
@@ -106,9 +143,10 @@ async function initialize(){
  renderer.domElement.setAttribute('aria-label','解剖学三维模型，可拖动旋转、滚轮缩放、点击选择结构');host.prepend(renderer.domElement);
  scene=new T.Scene();camera=new T.PerspectiveCamera(35,1,.001,100);camera.position.set(.5,1,2);
  controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.08;controls.autoRotateSpeed=.75;
- controls.addEventListener('start',()=>{transition=null;userInteraction=true;text('view-status','自由视角 · 人体方位不变');document.querySelectorAll('[data-view]').forEach(b=>b.classList.remove('active'));});
+ controls.addEventListener('start',()=>{transition=null;userInteraction=true;text('view-status','自由视角 · 人体方位不变');document.querySelectorAll('[data-view]').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-pressed','false');});});
  controls.addEventListener('end',()=>{userInteraction=false;});
  scene.add(new T.HemisphereLight('#ffffff','#75887c',1.0));const key=new T.DirectionalLight('#fff8ed',2.2);key.position.set(-2,4,4);scene.add(key);const rim=new T.DirectionalLight('#e1f4ef',.7);rim.position.set(3,1,-2);scene.add(rim);
+ text('loading-label','正在读取三维几何');
  const chunkResponses=await Promise.all(atlas.chunks.map(c=>fetch(c.url)));if(chunkResponses.some(r=>!r.ok))throw new Error('模型几何加载失败');const buffers=await Promise.all(chunkResponses.map(r=>r.arrayBuffer()));
  for(const part of atlas.parts){const buffer=buffers[part.chunk];const geometry=new T.BufferGeometry();geometry.setAttribute('position',new T.BufferAttribute(new Float32Array(buffer,part.positions,part.vertexCount*3),3));geometry.setAttribute('normal',new T.BufferAttribute(new Int16Array(buffer,part.normals,part.vertexCount*3),3,true));geometry.setIndex(new T.BufferAttribute(new Uint32Array(buffer,part.indices,part.indexCount),1));geometry.computeBoundingBox();geometry.computeBoundingSphere();
   const material=new T.MeshStandardMaterial({color:colors[part.teaching_system||part.system]||'#bbbaa7',roughness:.62,metalness:.025,side:T.DoubleSide});const mesh=new T.Mesh(geometry,material);mesh.userData.part=part;meshes.set(part.id,mesh);scene.add(mesh);
@@ -118,13 +156,13 @@ async function initialize(){
  renderer.domElement.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down.x,e.clientY-down.y)>5){down=null;return;}down=null;const rect=renderer.domElement.getBoundingClientRect();raycaster.setFromCamera(new T.Vector2((e.clientX-rect.left)/rect.width*2-1,-(e.clientY-rect.top)/rect.height*2+1),camera);const hit=raycaster.intersectObjects([...meshes.values()].filter(m=>m.visible))[0];if(hit)select(hit.object);});
  $('previous').onclick=()=>setStep(stepIndex-1);$('next').onclick=()=>setStep(stepIndex+1);$('step-menu').onchange=e=>setStep(Number(e.target.value));
  $('names').onclick=()=>{showNames=!showNames;updateNames();};$('layout').onclick=()=>{setLayout(layout==='native'?'compare':'native');updateNames();};$('fit').onclick=()=>fit(lesson.steps[stepIndex].view||'oblique');
- $('isolate').onclick=()=>{if(!picked)return;isolated=!isolated;for(const mesh of meshes.values())mesh.visible=isolated?mesh===picked:lesson.steps[stepIndex].show.includes(mesh.userData.part.id);text('isolate',isolated?'返回本步整体':'单独观察');$('isolate').classList.toggle('active',isolated);setLayout('native');updateNames();};
+ $('isolate').onclick=()=>{if(!picked)return;isolated=!isolated;for(const mesh of meshes.values())mesh.visible=isolated?mesh===picked:lesson.steps[stepIndex].show.includes(mesh.userData.part.id);text('isolate',isolated?'返回本步整体':'单独观察');$('isolate').classList.toggle('active',isolated);$('isolate').setAttribute('aria-pressed',String(isolated));setLayout('native');updateNames();};
  $('search').addEventListener('input',()=>{const results=$('search-results');results.replaceChildren();const query=normalizeSearch($('search').value);if(!query||!showNames)return;const found=atlas.parts.filter(p=>searchKeys(p).some(key=>key.includes(query))).sort((a,b)=>Number(!searchKeys(a).includes(query))-Number(!searchKeys(b).includes(query))).slice(0,10);for(const part of found){const button=document.createElement('button');button.className='structure-item';button.textContent=displayName(part);const small=document.createElement('small');small.textContent=part.name;button.append(small);button.onclick=()=>{const index=lesson.steps.findIndex(s=>s.show.includes(part.id));setStep(index);select(meshes.get(part.id));};results.append(button);}if(!found.length){const p=document.createElement('p');p.textContent='本页没有可确认的匹配。未收录中文译名时可用英文或模型ID，也可在聊天中让我核对。';results.append(p);}});
- $('orbit').onclick=()=>{transition=null;controls.autoRotate=!controls.autoRotate;text('orbit',controls.autoRotate?'暂停环绕':'自动环绕');$('orbit').classList.toggle('active',controls.autoRotate);if(controls.autoRotate)text('view-status','自动环绕 · 人体方位不变');};
+ $('orbit').onclick=()=>{transition=null;controls.autoRotate=!controls.autoRotate;text('orbit',controls.autoRotate?'暂停环绕':'自动环绕');$('orbit').classList.toggle('active',controls.autoRotate);$('orbit').setAttribute('aria-pressed',String(controls.autoRotate));if(controls.autoRotate)text('view-status','自动环绕 · 人体方位不变');};
  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>fit(b.dataset.view));
- ready=true;setStep(0);fit(lesson.steps[0].view||'oblique',false);text('load-status',`${atlas.sex==='female'?'女性组合参考':'男性参考'} · ${atlas.parts.length} 个结构`);
+ ready=true;$('loading-cover').hidden=true;setStep(0);fit(lesson.steps[0].view||'oblique',false);text('load-status',`${atlas.sex==='female'?'女性组合参考':'男性参考'} · ${atlas.parts.length} 个结构`);
  renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();ready=false;text('load-status','三维渲染已暂停，请刷新恢复');});
  window.anatomyTutor={setStep,setView:fit,setNames(value){showNames=!!value;updateNames();},status(){return {ready,step:stepIndex,showNames,layout,visible:[...meshes.values()].filter(m=>m.visible).map(m=>m.userData.part.id),triangles:renderer.info.render.triangles};},project(id){const mesh=meshes.get(id);if(!mesh||!mesh.visible)return null;const point=mesh.geometry.boundingBox.getCenter(new T.Vector3()).add(mesh.position).project(camera);const rect=renderer.domElement.getBoundingClientRect();return {x:rect.x+(point.x+1)*rect.width/2,y:rect.y+(1-point.y)*rect.height/2};}};
  requestAnimationFrame(tick);
 }
-initialize().catch(error=>{text('load-status','加载未完成');const p=document.createElement('p');p.className='error';p.textContent=`无法完成三维展示：${error.message}。可继续在聊天中结合课件图学习。`;host.append(p);});
+initialize().catch(error=>{text('load-status','加载未完成');$('loading-cover').hidden=true;const p=document.createElement('p');p.className='error';p.textContent=`无法完成三维展示：${error.message}。可继续在聊天中结合课件图学习。`;host.append(p);});
