@@ -1,6 +1,6 @@
 # 可执行播放器
 
-脚本仅需Python标准库，pdf子命令额外需pypdf；优先通过load_workspace_dependencies定位bundled runtime。
+基础脚本仅需Python标准库，pdf子命令额外需pypdf，构建课件选页图额外需PyMuPDF；优先通过load_workspace_dependencies定位bundled runtime。
 
 在技能目录运行（其他目录用脚本绝对路径）：
 
@@ -48,6 +48,37 @@ python scripts/atlas_tutor.py serve --site 'OUTPUTS/my-lesson' --port 8765
 - 当前支持显隐、整块高亮、选择、聚焦、相机、并排比较、分步讲解和无标签测验；没有骨面任意局部涂色、真实断层、器官变形或关节活动模拟。
 
 build生成离线资源完整的index.html、viewer.js、lesson.json、中文术语状态、选定几何与许可/来源文件。explore使用同一播放器生成全清单浏览页，可用--system限定展示分组（不是教材系统分类）。骨学展示会排除牙龈/牙列并另列口腔参考，原始分组仍保留。输出目录必须新建或已有同类学习页，不覆盖其他项目。
+
+## 课件页与易混点卡
+
+构建输入可增加以下字段（ID 换成当前模型中经核对的真实网格 ID）：
+
+```json
+{
+  "courseware": [{
+    "id": "course", "title": "课程课件", "short_title": "课件",
+    "source_path": "COURSE.pdf", "pages": [9, 10]
+  }],
+  "comparisons": [{
+    "title": "两个结构如何区分", "ids": ["REAL_A", "REAL_B"], "steps": [0],
+    "items": [{
+      "label": "观察形态", "cue": "经来源核对的观察提示",
+      "ids": ["REAL_A", "REAL_B"], "support": "limited", "view": "oblique"
+    }],
+    "source": {"title": "指定教材", "locator": "相关章/节"}
+  }]
+}
+```
+
+在相应 steps 对象中加 `"course_pages": [{"document":"course","page":9}]`。页码按 PDF 文件页序，从1开始；卡片 steps 从0开始。source_path 相对 lesson JSON 目录解析，也可用绝对路径。仅渲染明确选择的页；输出路径换成站内 PNG，记录 PDF 与图片 SHA256，不复制原 PDF。构建后的 lesson 是播放器数据，重新构建需使用保留本地 source_path 的输入 lesson。
+
+support 必须为 visible（模型可见）、limited（细节需课件）、course-only（仅课件支持）。source 必须提供标题及 pages 或 locator，可选 url 为 HTTPS 参考链接。卡片只在对应课程步骤或包含相关结构的自选对比显示；无标签辨认时隐藏。
+
+课件面板默认收起；开启后可自动跟随步骤，也可取消跟随、手动翻页、跳到对应步骤或放大图。手机将模型与课件上下排列。切换辨认会移除课件图的 src，并关闭已打开的课件弹窗。
+
+逐个结构和模型分组可切换显隐；至少保留一个结构。选中结构可保持清晰并淡化周围结构，透明度10%–50%。切换步骤或开始辨认会重置显隐与淡化。动态方位采用模型 +X人体左、+Y上、+Z前；相机旋转改变屏幕投影，不改变人体方向。
+
+仓库示例不带课程 PDF 或课件图片；不要将本地生成的课件目录直接提交到开源仓库。程序校验出处字段、模型 ID 和资源完整性，不能证明讲解内容已经教师审定。
 
 ## 核验
 

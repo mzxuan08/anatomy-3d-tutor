@@ -130,5 +130,97 @@
       "quiz": true,
       "source": "躯干骨课件 · PDF第9–13页"
     }
+  ],
+  "comparisons": [
+    {
+      "title": "颈椎、胸椎与腰椎：先看大形态，再核对细节",
+      "ids": [
+        "FJ3161",
+        "FJ3171",
+        "FJ3162"
+      ],
+      "steps": [
+        2
+      ],
+      "items": [
+        {
+          "label": "典型颈椎",
+          "ids": [
+            "FJ3161"
+          ],
+          "cue": "从上面观找椎体及椎孔，比较椎体相对大小。横突孔和棘突分叉需课件图复核，不把所有颈椎都概括成同一外形。",
+          "support": "limited",
+          "view": "top"
+        },
+        {
+          "label": "典型胸椎",
+          "ids": [
+            "FJ3171"
+          ],
+          "cue": "从侧面观察棘突向后下方的方向。用于与肋连接的肋凹属于精细表面特征，网格未清楚呈现时回看课件。",
+          "support": "limited",
+          "view": "left"
+        },
+        {
+          "label": "典型腰椎",
+          "ids": [
+            "FJ3162"
+          ],
+          "cue": "同尺度比较椎体大小，再从侧面看较宽的棘突形态。先说实际看到的差异，再对应课件概括。",
+          "support": "limited",
+          "view": "left"
+        }
+      ],
+      "source": {
+        "title": "躯干骨课件；对照OpenStax 7.3 Regional Modifications of Vertebrae",
+        "pages": [
+          10,
+          12,
+          13
+        ],
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+      },
+      "question": "哪些判断来自模型上看清的形态，哪些只是你从课件知道的特征？",
+      "answer": "把可见观察和课件知识分开说。当前网格没有把每个孔、凹或关节面拆成独立结构；看不清不等于不存在。"
+    },
+    {
+      "title": "椎孔、椎管与椎间孔",
+      "ids": [
+        "FJ3161",
+        "FJ3164"
+      ],
+      "steps": [
+        3
+      ],
+      "items": [
+        {
+          "label": "单骨与整体",
+          "ids": [
+            "FJ3161",
+            "FJ3164"
+          ],
+          "cue": "椎孔位于单个椎骨内；连续排列的椎孔构成椎管。先看单骨，再恢复相邻椎骨原位。",
+          "support": "limited",
+          "view": "top"
+        },
+        {
+          "label": "相邻椎骨之间",
+          "ids": [
+            "FJ3161",
+            "FJ3164"
+          ],
+          "cue": "椎间孔位于相邻椎骨之间。侧面观察相邻椎弓根切迹，形成边界与连结关系请对照课件；不能用并排位移画面判断。",
+          "support": "limited",
+          "view": "right"
+        }
+      ],
+      "source": {
+        "title": "躯干骨课件；对照OpenStax 7.3 General Structure of a Vertebra",
+        "pages": [
+          9
+        ],
+        "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+      }
+    }
   ]
 }

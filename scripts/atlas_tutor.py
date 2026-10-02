@@ -168,6 +168,101 @@ def resolve_ids(ids, atlas):
                 result.append(item)
     return result
 
+def validate_learning_content(lesson, selected):
+    documents = lesson.get('courseware', [])
+    if not isinstance(documents, list):
+        raise ValueError('courseware必须为文档列表')
+    known = {}
+    for document in documents:
+        key = document.get('id', '')
+        if not re.fullmatch(r'[a-zA-Z0-9_-]+', key) or key in known or not document.get('title'):
+            raise ValueError('课件需要唯一安全ID与标题')
+        numbers = []
+        for page in document.get('pages', []):
+            number = page if type(page) is int else page.get('number') if isinstance(page, dict) else None
+            if type(page) is int and not document.get('source_path'):
+                raise ValueError('打包后的课件页必须包含图片路径')
+            if type(number) is not int or number < 1 or number in numbers:
+                raise ValueError('课件页序必须为唯一正整数')
+            if isinstance(page, dict) and (page.get('image') is not None or not document.get('source_path')) and page.get('image') != f'courseware/{key}/page-{number}.png':
+                raise ValueError('课件图片路径不匹配页序')
+            numbers.append(number)
+        if not numbers:
+            raise ValueError('课件必须明确需要的页序')
+        known[key] = numbers
+    for step in lesson['steps']:
+        for ref in step.get('course_pages', []):
+            if ref.get('document') not in known or ref.get('page') not in known[ref['document']]:
+                raise ValueError('学习步骤引用了未打包的课件页')
+    for card in lesson.get('comparisons', []):
+        ids = card.get('ids', [])
+        if not ids or not set(ids).issubset(selected) or not card.get('title') or not card.get('source', {}).get('title'):
+            raise ValueError('易混点卡需要有效结构、标题与出处')
+        if not card.get('items') or any(type(i) is not int or not 0 <= i < len(lesson['steps']) for i in card.get('steps', [])):
+            raise ValueError('易混点卡缺少观察内容或步骤无效')
+        source = card['source']
+        if not source.get('pages') and not source.get('locator'):
+            raise ValueError('易混点依据需要页序或具体章节定位')
+        for item in card['items']:
+            if not set(item.get('ids', [])).issubset(ids) or not item.get('label') or not item.get('cue') or item.get('support') not in {'visible','limited','course-only'} or item.get('view', 'oblique') not in VIEWS:
+                raise ValueError('观察提示必须有模型支持程度、内容与有效视角')
+
+def preflight_courseware(lesson, lesson_path):
+    if not lesson.get('courseware'):
+        return
+    try:
+        import pymupdf
+    except ImportError as exc:
+        raise ValueError('课件页联动需要PyMuPDF') from exc
+    for document in lesson['courseware']:
+        source = document.get('source_path')
+        if not source:
+            raise ValueError('构建课件联动需要source_path指向本地PDF')
+        path = Path(source)
+        if not path.is_absolute():
+            path = Path(lesson_path).resolve().parent / path
+        with pymupdf.open(path) as pdf:
+            numbers = [p if type(p) is int else p['number'] for p in document['pages']]
+            if not pdf.is_pdf or pdf.is_encrypted or max(numbers) > len(pdf):
+                raise ValueError('课件需要可读取PDF，且页序不能超过文件范围')
+
+def render_courseware(lesson, out, lesson_path):
+    if not lesson.get('courseware'):
+        return {}
+    try:
+        import pymupdf as fitz
+    except ImportError as exc:
+        raise ValueError('课件页联动需要PyMuPDF；请安装pymupdf或使用包含它的Python运行时') from exc
+    hashes = {}
+    for document in lesson['courseware']:
+        source = document.get('source_path')
+        if not source:
+            raise ValueError('构建课件联动需要source_path指向本地PDF')
+        pdf_path = Path(source)
+        if not pdf_path.is_absolute():
+            pdf_path = Path(lesson_path).resolve().parent / pdf_path
+        pdf = fitz.open(pdf_path)
+        if not pdf.is_pdf:
+            raise ValueError('课件来源必须为PDF')
+        document['source_sha256'] = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
+        output_pages = []
+        for item in document['pages']:
+            number = item if type(item) is int else item['number']
+            if number > len(pdf):
+                raise ValueError('课件页序超出源PDF范围')
+            page = pdf[number-1]
+            name = f'courseware/{document["id"]}/page-{number}.png'
+            target = out / name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            scale = min(2, 1600 / max(page.rect.width, page.rect.height))
+            page.get_pixmap(matrix=fitz.Matrix(scale,scale), alpha=False).save(target)
+            hashes[name] = hashlib.sha256(target.read_bytes()).hexdigest()
+            output_pages.append({'number':number, 'image':name, 'caption':item.get('caption', '') if isinstance(item, dict) else ''})
+        document['pages'] = output_pages
+        document.pop('source_path')
+        pdf.close()
+    return hashes
+
 def normalize_lesson(lesson, atlas):
     if not isinstance(lesson.get('title'), str) or not lesson['title'].strip():
         raise ValueError('lesson缺少title')
@@ -197,6 +292,7 @@ def normalize_lesson(lesson, atlas):
         source = lesson.get('label_sources', {}).get(key)
         if not isinstance(source, str) or not source.strip():
             raise ValueError(f'中文课内标注需要label_sources中的具体依据：{key}')
+    validate_learning_content(lesson, selected)
     return selected
 
 def chunk_path(folder, chunk):
@@ -245,6 +341,7 @@ def build(args):
         raise ValueError('sex仅支持male/female')
     folder, atlas = load_atlas(args.atlas, sex)
     ids = normalize_lesson(lesson, atlas)
+    preflight_courseware(lesson, args.lesson)
     out = Path(args.out).resolve()
     if out.exists() and any(out.iterdir()) and not (out / '.anatomy-tutor.json').is_file():
         raise ValueError('拒绝覆盖非本播放器的已有输出目录')
@@ -282,8 +379,12 @@ def build(args):
     (out / 'models/geometry.bin').write_bytes(packed)
     manifest = {'sex':sex, 'source':atlas.get('source'), 'scope':atlas.get('scope'), 'parts':parts, 'terminology_sources':term_data().get('sources', {}), 'chunks':[{'url':'models/geometry.bin', 'bytes':len(packed)}]}
     write_json(out / 'models/atlas.json', manifest)
+    course_hashes = render_courseware(lesson, out, args.lesson)
+    if lesson.get('courseware'):
+        for source in lesson.get('sources', []):
+            source.pop('path', None)
     write_json(out / 'lesson.json', lesson)
-    for name in ('index.html','viewer.js','style.css','search.css','preview.ps1','launch.cmd'):
+    for name in ('index.html','viewer.js','learning-tools.js','style.css','search.css','preview.ps1','launch.cmd'):
         shutil.copy2(ROOT / 'assets/viewer' / name, out / name)
     shutil.copytree(ROOT / 'assets/vendor', out / 'vendor', dirs_exist_ok=True)
     attribution = folder.parent / 'ATTRIBUTION.md'
@@ -295,6 +396,9 @@ def build(args):
         shutil.copy2(license_path, out / 'HUMAN-ATLAS-LICENSE.txt')
     source_manifest = folder / ('atlas-female.json' if sex == 'female' else 'atlas.json')
     receipt = {'format':'anatomy-3d-tutor-v1', 'source_manifest':source_manifest.name, 'source_manifest_sha256':hashlib.sha256(source_manifest.read_bytes()).hexdigest(), 'source_chunk_sha256':{str(ci):hashlib.sha256(data).hexdigest() for ci,data in chunks.items()}, 'sex':sex, 'mesh_count':len(parts), 'sha256':hashlib.sha256(packed).hexdigest(), 'note':'缓冲区检查通过；未经过专业解剖学几何审定'}
+    if course_hashes:
+        receipt['course_page_sha256'] = course_hashes
+        receipt['courseware_scope'] = '本地课程节选，不随技能自动开源'
     write_json(out / '.anatomy-tutor.json', receipt)
     print(json.dumps({'site':str(out), 'parts':len(parts), 'geometry_bytes':len(packed)}, ensure_ascii=False))
 
@@ -311,7 +415,12 @@ def validate_site(site):
     receipt = read_json(site / '.anatomy-tutor.json')
     if hashlib.sha256(data).hexdigest() != receipt['sha256']:
         raise ValueError('几何SHA256与打包记录不一致')
-    for file in ['index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
+    for document in lesson.get('courseware', []):
+        for page in document['pages']:
+            image = site / page['image']
+            if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != receipt.get('course_page_sha256', {}).get(page['image']):
+                raise ValueError('课件页缺失或与构建记录不一致')
+    for file in ['learning-tools.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
         if not (site / file).is_file():
             raise ValueError(f'缺失页面资源：{file}')
     return {'status':'passed', 'parts':len(ids), 'steps':len(lesson['steps']), 'note':'仅验证格式、引用与几何数据，不代表医学审定'}
