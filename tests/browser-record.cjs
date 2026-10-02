@@ -19,4 +19,3 @@ const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
   console.log(JSON.stringify({status:'passed',checks:['辨认期间禁用保存恢复','本机主动保存与刷新恢复','保存原回答及自评','JSON备份导入','其他课程及无效记录拒绝且清单不变','手机记录面板'],outputDir:tmp}));
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});
-
