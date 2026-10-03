@@ -1,0 +1,4 @@
+.search-box .field-title{display:flex;align-items:center;justify-content:space-between}.key-hint{border:1px solid var(--border);color:var(--muted);border-radius:5px;font-size:10px;padding:1px 6px}
+.search-box input{display:block;width:100%;font-size:13px;padding:12px;color:var(--ink);background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-top:10px}.search-box input:disabled{opacity:.6}#search-hint{margin:8px 0 0}
+#search-results{max-height:270px;overflow:auto;scrollbar-width:thin;margin-top:4px}#search-results:empty{display:none}#search-results p{font-size:12px;color:var(--muted);line-height:1.8;margin:10px 0}
+@media(max-width:760px){.search-box input{font-size:16px}}

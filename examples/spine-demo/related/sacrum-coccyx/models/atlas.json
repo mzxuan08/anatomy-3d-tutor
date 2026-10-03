@@ -1,0 +1,126 @@
+{
+  "sex": "female",
+  "source": "https://lod.humanatlas.io/ref-organ/united-female/v1.10",
+  "scope": "Whole-body surface with selected organs. Skeletal and muscular coverage is partial.",
+  "parts": [
+    {
+      "id": "HRAF0825",
+      "name": "Sacrum",
+      "conceptId": "HRA:sacrum",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 0,
+      "normals": 38700,
+      "indices": 58052,
+      "vertexCount": 3225,
+      "indexCount": 19542,
+      "bounds": [
+        [
+          -0.06572669601529366,
+          0.8364540186334,
+          -0.18925277965516346
+        ],
+        [
+          0.06169173636943573,
+          0.9354945716071472,
+          -0.0843584694191863
+        ]
+      ],
+      "original_system": "skeletal",
+      "teaching_system": "skeletal",
+      "terminology": {
+        "en": "Sacrum",
+        "zh": "骶骨",
+        "status": "textbook-matched",
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+            "evidence_type": "bilingual-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 474,
+            "term_id": "02.0485"
+          }
+        ],
+        "aliases_zh": [],
+        "allow_side": false
+      },
+      "lesson_label": "骶骨",
+      "lesson_label_source": "躯干骨课件 PDF第14页中文；HRA原始英文Sacrum/Coccyx，OpenStax §7.3对应核对"
+    },
+    {
+      "id": "HRAF0826",
+      "name": "Coccyx",
+      "conceptId": "HRA:coccyx",
+      "system": "skeletal",
+      "chunk": 0,
+      "positions": 136220,
+      "normals": 143228,
+      "indices": 146732,
+      "vertexCount": 584,
+      "indexCount": 3492,
+      "bounds": [
+        [
+          -0.017525785104329644,
+          0.8108333625454054,
+          -0.1851127006337096
+        ],
+        [
+          0.014381543300156535,
+          0.8377818462062225,
+          -0.14712610917538899
+        ]
+      ],
+      "original_system": "skeletal",
+      "teaching_system": "skeletal",
+      "terminology": {
+        "en": "Coccyx",
+        "zh": "尾骨",
+        "status": "textbook-matched",
+        "review_note": "教材中文定位与人工双语匹配；未由解剖教师独立审定",
+        "sources": [
+          {
+            "source_id": "system-anatomy-10",
+            "locator": "01-第一章 运动系统 / 第一节｜骨 / 2. 各部椎骨主要的形态特征",
+            "evidence_type": "bilingual-context"
+          },
+          {
+            "source_id": "fudan-anatomy-2013",
+            "pdf_page": 420,
+            "term_id": "02.0503"
+          }
+        ],
+        "aliases_zh": [],
+        "allow_side": false
+      },
+      "lesson_label": "尾骨",
+      "lesson_label_source": "躯干骨课件 PDF第14页中文；HRA原始英文Sacrum/Coccyx，OpenStax §7.3对应核对"
+    }
+  ],
+  "terminology_sources": {
+    "system-anatomy-10": {
+      "title": "系统解剖学（第10版）",
+      "role": "课堂中文术语定位；中英对应由人工核对",
+      "redistribution": "只记录术语及章节定位，不包含教材正文或图片",
+      "kind": "textbook"
+    },
+    "fudan-anatomy-2013": {
+      "title": "复旦大学公开人体解剖学名词PDF（标年2013）",
+      "url": "https://xtjp.fudan.edu.cn/Upload/Files/201804100314393640155.pdf",
+      "accessed": "2026-10-02",
+      "sha256": "1a29ca3fe95cab6a43a3748f69c28476d577c4b455158434a3279a84a0e64160",
+      "role": "逐项中英对应参考；不宣称等同于现行最终标准",
+      "redistribution": "仅引用选定事实性术语对应和条目定位，不分发源PDF、定义或完整词库",
+      "kind": "bilingual-reference"
+    }
+  },
+  "chunks": [
+    {
+      "url": "models/geometry.bin",
+      "bytes": 160700
+    }
+  ]
+}

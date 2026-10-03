@@ -80,5 +80,5 @@ export function createLearningTools({$,state,select,fit,setStep,changed,safeName
  $('course-page-select').onchange=()=>{const [document,page]=$('course-page-select').value.split(':');setPage({document,page:Number(page)});};
  $('course-follow').onchange=()=>{lastStep=-1;renderCourse();};$('course-step').onclick=()=>{if(!currentPage)return;const ref=currentPage,index=state().lesson.steps.findIndex(step=>(step.course_pages||[]).some(r=>pageKey(r)===pageKey(ref)));if(index>=0){setStep(index);setPage(ref);document.querySelector('.viewport').scrollIntoView({block:'nearest'});}};
  $('course-expand').onclick=()=>$('course-dialog').showModal();$('course-close').onclick=()=>$('course-dialog').close();$('course-image').onerror=()=>{$('course-image').hidden=true;$('course-error').hidden=false;$('course-error').textContent='课件页图片未能加载，请检查本地学习页的课件资源。';};
- return {reset,applyVisibility,applyMaterials,renderStructures,renderExtras,renderOrientation,status:()=>({hidden:[...hidden],dimmed,opacity,courseOpen,page:currentPage})};
+ return {reset,applyVisibility,applyMaterials,renderStructures,renderExtras,renderOrientation,openPage(ref){if(!state().showNames||state().mode!=='lesson')return;courseOpen=true;renderCourse();setPage(ref);},status:()=>({hidden:[...hidden],dimmed,opacity,courseOpen,page:currentPage})};
 }

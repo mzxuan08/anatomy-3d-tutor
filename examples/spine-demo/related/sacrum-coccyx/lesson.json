@@ -1,0 +1,61 @@
+{
+  "title": "骶骨与尾骨：独立参考观察",
+  "sex": "female",
+  "intro": "这两块骨来自同一女性HRA参考模型，保留原位。男性清单缺少独立尾骨不等于整个项目没有尾骨。不可与男性脊柱混合推断比例或性别差异。",
+  "sources": [
+    {
+      "title": "HRA Female v1.10，见ATTRIBUTION.md；OpenStax Anatomy and Physiology 2e §7.3 Sacrum and Coccyx"
+    }
+  ],
+  "steps": [
+    {
+      "title": "看清骶骨与尾骨的连续位置",
+      "body": "先从前面定位上方骶骨与下方尾骨，再切侧面观察形态。选择尾骨可单独观察，回整体看与骶骨的连续关系。",
+      "show": [
+        "HRAF0825",
+        "HRAF0826"
+      ],
+      "highlight": [],
+      "view": "front",
+      "layout": "native",
+      "quiz": false,
+      "source": "HRA Female v1.10；OpenStax §7.3 Sacrum and Coccyx",
+      "prompt": "尾骨位于骶骨的哪一侧？",
+      "answer": "尾骨在骶骨下方，此页保留两者原位。"
+    },
+    {
+      "title": "单独观察尾骨",
+      "body": "旋转观察这块尾骨参考网格，再返回整体。融合节数、细小关节面和个体差异请按教材或课件核对，不从简化表面推断。",
+      "show": [
+        "HRAF0826"
+      ],
+      "highlight": [],
+      "view": "left",
+      "layout": "native",
+      "quiz": false,
+      "source": "HRA Female v1.10；OpenStax §7.3 Sacrum and Coccyx"
+    },
+    {
+      "title": "换角度自己辨认",
+      "body": "先说名称与相对位置，答完再核对。",
+      "show": [
+        "HRAF0826"
+      ],
+      "highlight": [],
+      "view": "back",
+      "layout": "native",
+      "quiz": true,
+      "source": "HRA Female v1.10；OpenStax §7.3 Sacrum and Coccyx",
+      "prompt": "这是哪个结构？它位于另一块参考骨的上方还是下方？",
+      "answer": "尾骨，位于骶骨下方。"
+    }
+  ],
+  "labels": {
+    "HRAF0825": "骶骨",
+    "HRAF0826": "尾骨"
+  },
+  "label_sources": {
+    "HRAF0825": "躯干骨课件 PDF第14页中文；HRA原始英文Sacrum/Coccyx，OpenStax §7.3对应核对",
+    "HRAF0826": "躯干骨课件 PDF第14页中文；HRA原始英文Sacrum/Coccyx，OpenStax §7.3对应核对"
+  }
+}

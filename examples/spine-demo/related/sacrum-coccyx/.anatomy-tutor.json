@@ -1,0 +1,12 @@
+{
+  "format": "anatomy-3d-tutor-v1",
+  "source_manifest": "atlas-female.json",
+  "source_manifest_sha256": "349ad9085901db2cced179d467542271289ee0b259414a78814402d5ac374d2f",
+  "source_chunk_sha256": {
+    "10": "12eeba43f977110be48ff4ff7eafe1c08c543ba1d6a8eadb7f4d55b0d1b7c544"
+  },
+  "sex": "female",
+  "mesh_count": 2,
+  "sha256": "e350a212af8a9279d1c7e4492c5cb8a8336461697df5142af93a9a6e4f457308",
+  "note": "缓冲区检查通过；未经过专业解剖学几何审定"
+}

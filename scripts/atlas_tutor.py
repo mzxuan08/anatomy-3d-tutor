@@ -293,7 +293,51 @@ def normalize_lesson(lesson, atlas):
         if not isinstance(source, str) or not source.strip():
             raise ValueError(f'中文课内标注需要label_sources中的具体依据：{key}')
     validate_learning_content(lesson, selected)
+    parts = {p['id']:p for p in atlas['parts']}
+    keys = set()
+    for mark in lesson.get('landmarks', []):
+        point = mark.get('point', [])
+        part = parts.get(mark.get('part'))
+        if not re.fullmatch(r'[a-zA-Z0-9_-]+', mark.get('id', '')) or mark['id'] in keys or not part or part['id'] not in selected:
+            raise ValueError('局部标志需要唯一安全ID和本课真实结构')
+        keys.add(mark['id'])
+        if not all(isinstance(mark.get(k), str) and mark[k].strip() for k in ['label','cue','source','review']) or not re.fullmatch(r'[a-f0-9]{64}', mark.get('geometry_sha256','')):
+            raise ValueError('局部标志需要名称、观察提示、出处、表面核对记录与几何指纹')
+        if len(point) != 3 or any(type(v) not in (int,float) or not math.isfinite(v) or not part['bounds'][0][i] <= v <= part['bounds'][1][i] for i,v in enumerate(point)):
+            raise ValueError('局部标志坐标无效或超出原网格范围')
+        radius = mark.get('radius')
+        if type(radius) not in (int,float) or not math.isfinite(radius) or not 0 < radius <= max(part['bounds'][1][i]-part['bounds'][0][i] for i in range(3))*.3:
+            raise ValueError('局部观察着色范围无效或过大')
+        if mark.get('view') not in VIEWS or not mark.get('steps') or any(type(i) is not int or not 0 <= i < len(steps) or part['id'] not in steps[i]['show'] for i in mark['steps']):
+            raise ValueError('局部标志需要有效视角与显示对应结构的步骤')
+        if type(mark.get('triangle')) is not int or mark['triangle'] < 0:
+            raise ValueError('观察点必须定位到原网格三角面')
+        if mark.get('course_page'):
+            ref=mark['course_page']
+            if not any(d['id']==ref.get('document') and ref.get('page') in [p if type(p) is int else p['number'] for p in d['pages']] for d in lesson.get('courseware', [])):
+                raise ValueError('局部标志引用了未打包的课件页')
+    for link in lesson.get('related_lessons', []):
+        if not link.get('title') or not link.get('scope') or not re.fullmatch(r'related/[a-zA-Z0-9_-]+/', link.get('url','')):
+            raise ValueError('补充学习链接必须是站内related目录及明确的独立模型说明')
     return selected
+
+def geometry_fingerprint(part, data):
+    return hashlib.sha256(b''.join(data[part[k]:part[k]+n] for k,n in [('positions',part['vertexCount']*12),('indices',part['indexCount']*4)])).hexdigest()
+
+def check_landmark_geometry(lesson, parts, data):
+    lookup = {p['id']:p for p in parts}
+    for mark in lesson.get('landmarks', []):
+        part=lookup[mark['part']]
+        if geometry_fingerprint(part, data) != mark['geometry_sha256']:
+            raise ValueError('局部标志的几何版本不符，需要重新核对表面位置')
+        if mark['triangle'] >= part['indexCount']//3:
+            raise ValueError('局部标志三角面越界')
+        import struct
+        indices=struct.unpack_from('<3I',data,part['indices']+mark['triangle']*12)
+        points=[struct.unpack_from('<3f',data,part['positions']+i*12) for i in indices]
+        center=[sum(p[axis] for p in points)/3 for axis in range(3)]
+        if any(abs(a-b)>1e-6 for a,b in zip(center,mark['point'])):
+            raise ValueError('局部观察点与核对三角面不一致')
 
 def chunk_path(folder, chunk):
     name = chunk['url'].replace('\\','/').split('/')[-1]
@@ -374,6 +418,7 @@ def build(args):
             packed.extend(data[start:start+length])
         check_part(part, packed)
         parts.append(part)
+    check_landmark_geometry(lesson, parts, packed)
     out.mkdir(parents=True, exist_ok=True)
     (out / 'models').mkdir(exist_ok=True)
     (out / 'models/geometry.bin').write_bytes(packed)
@@ -384,7 +429,7 @@ def build(args):
         for source in lesson.get('sources', []):
             source.pop('path', None)
     write_json(out / 'lesson.json', lesson)
-    for name in ('index.html','viewer.js','learning-tools.js','study-record.js','style.css','search.css','preview.ps1','launch.cmd'):
+    for name in ('index.html','viewer.js','learning-tools.js','study-record.js','landmarks.js','style.css','search.css','preview.ps1','launch.cmd'):
         shutil.copy2(ROOT / 'assets/viewer' / name, out / name)
     shutil.copytree(ROOT / 'assets/vendor', out / 'vendor', dirs_exist_ok=True)
     attribution = folder.parent / 'ATTRIBUTION.md'
@@ -412,6 +457,7 @@ def validate_site(site):
         raise ValueError('打包几何长度不符')
     for part in atlas['parts']:
         check_part(part, data)
+    check_landmark_geometry(lesson, atlas['parts'], data)
     receipt = read_json(site / '.anatomy-tutor.json')
     if hashlib.sha256(data).hexdigest() != receipt['sha256']:
         raise ValueError('几何SHA256与打包记录不一致')
@@ -420,7 +466,7 @@ def validate_site(site):
             image = site / page['image']
             if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != receipt.get('course_page_sha256', {}).get(page['image']):
                 raise ValueError('课件页缺失或与构建记录不一致')
-    for file in ['learning-tools.js','study-record.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
+    for file in ['learning-tools.js','study-record.js','landmarks.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
         if not (site / file).is_file():
             raise ValueError(f'缺失页面资源：{file}')
     return {'status':'passed', 'parts':len(ids), 'steps':len(lesson['steps']), 'note':'仅验证格式、引用与几何数据，不代表医学审定'}
