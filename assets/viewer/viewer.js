@@ -75,7 +75,7 @@ function updateNames(){
   const part=mesh.userData.part,button=document.createElement('button');button.className='structure-item';button.textContent=safeName(part);button.dataset.partId=part.id;button.classList.toggle('active',mesh===picked);button.setAttribute('aria-pressed',String(mesh===picked));
   if(showNames){const small=document.createElement('small');small.textContent=part.name;button.append(small);}
   button.addEventListener('click',()=>select(mesh));list.append(button);
-  if(showNames&&visible.length<=8){const el=document.createElement('span');el.className='mesh-label';el.textContent=displayName(part);el.dataset.id=part.id;labelHost.append(el);}
+  if(showNames&&visible.length<=8){const el=document.createElement('span');el.className='mesh-label'+(visible.length===1?' single-label':'');el.textContent=displayName(part);el.dataset.id=part.id;labelHost.append(el);}
  }
  renderPicked();renderTrays();
  $('names').disabled=mode==='review'||mode==='review-summary';$('layout').disabled=mode==='review'||mode==='review-summary';$('isolate').disabled=!picked||mode==='review'||mode==='review-summary';
@@ -200,6 +200,8 @@ $('practice-exit').onclick=()=>setStep(stepIndex);$('review-export').onclick=exp
 $('review-weak').onclick=()=>startReview(reviewIds.filter(id=>reviewResults.get(id)?.rating==='again'));
 function renderLabels(){
  for(const el of labelHost.children){const mesh=meshes.get(el.dataset.id);if(!mesh?.visible){el.hidden=true;continue;}
+  // A lone structure is already unambiguous; keep its caption off the anatomy.
+  if(el.classList.contains('single-label')){el.hidden=false;el.style.left='12px';el.style.top='auto';continue;}
   const center=mesh.geometry.boundingBox.getCenter(new T.Vector3()).add(mesh.position);center.project(camera);
   el.hidden=center.z>1||center.z< -1||Math.abs(center.x)>1.05||Math.abs(center.y)>1.05;
   el.style.left=`${(center.x+1)*host.clientWidth/2}px`;el.style.top=`${(1-center.y)*host.clientHeight/2}px`;
