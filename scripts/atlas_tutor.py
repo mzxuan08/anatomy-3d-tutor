@@ -263,6 +263,45 @@ def render_courseware(lesson, out, lesson_path):
         pdf.close()
     return hashes
 
+def validate_coaching(lesson):
+    marks = {m['id']: m for m in lesson.get('landmarks', [])}
+    for index, step in enumerate(lesson['steps']):
+        guide, hints, exercise = step.get('guide', []), step.get('hints', []), step.get('exercise')
+        if not (guide or hints or exercise):
+            continue
+        if not isinstance(step.get('source'), str) or not step['source'].strip():
+            raise ValueError('演示、提示和练习需要本步具体出处')
+        if not isinstance(guide, list) or len(guide) > 12 or (guide and step.get('quiz')):
+            raise ValueError('演示最多12段，盲测步骤不能配置讲解演示')
+        for frame in guide:
+            if not isinstance(frame, dict) or not isinstance(frame.get('cue'), str) or not frame['cue'].strip() or frame.get('view') not in VIEWS:
+                raise ValueError('演示需要观察提示与有效视角')
+            if frame.get('focus') and frame['focus'] not in step['show']:
+                raise ValueError('演示聚焦必须使用本步结构')
+            if 'dim' in frame and type(frame['dim']) is not bool:
+                raise ValueError('淡化选项必须为布尔值')
+            if frame.get('dim') and not frame.get('focus'):
+                raise ValueError('淡化演示必须指定聚焦结构')
+            if frame.get('landmark'):
+                mark = marks.get(frame['landmark'])
+                if not mark or index not in mark['steps'] or mark['part'] not in step['show']:
+                    raise ValueError('演示只能引用本步已核对的观察点')
+        if not isinstance(hints, list) or len(hints) > 3 or any(not isinstance(h, str) or not h.strip() for h in hints):
+            raise ValueError('分级提示须为1–3条非空文本')
+        if hints and not step.get('prompt'):
+            raise ValueError('提示需要对应问题')
+        if exercise:
+            if not isinstance(exercise, dict) or exercise.get('kind') not in {'point', 'explain', 'compare', 'relation'} or not step.get('prompt') or not step.get('answer'):
+                raise ValueError('练习需要类型、题干和核对解释')
+            criteria = exercise.get('criteria')
+            if not isinstance(criteria, list) or not 1 <= len(criteria) <= 6 or any(not isinstance(c, str) or not c.strip() for c in criteria):
+                raise ValueError('练习需要1–6条核对要点')
+            if exercise['kind'] == 'point' and exercise.get('target') not in step['show']:
+                raise ValueError('自动点选核验仅支持本步整块网格')
+            if exercise['kind'] == 'relation' and step.get('layout', 'native') != 'native':
+                raise ValueError('空间关系练习需要原位显示')
+
+
 def normalize_lesson(lesson, atlas):
     if not isinstance(lesson.get('title'), str) or not lesson['title'].strip():
         raise ValueError('lesson缺少title')
@@ -319,6 +358,7 @@ def normalize_lesson(lesson, atlas):
     for link in lesson.get('related_lessons', []):
         if not link.get('title') or not link.get('scope') or not re.fullmatch(r'related/[a-zA-Z0-9_-]+/', link.get('url','')):
             raise ValueError('补充学习链接必须是站内related目录及明确的独立模型说明')
+    validate_coaching(lesson)
     return selected
 
 def geometry_fingerprint(part, data):
@@ -429,7 +469,7 @@ def build(args):
         for source in lesson.get('sources', []):
             source.pop('path', None)
     write_json(out / 'lesson.json', lesson)
-    for name in ('index.html','viewer.js','learning-tools.js','study-record.js','landmarks.js','style.css','search.css','preview.ps1','launch.cmd'):
+    for name in ('index.html','viewer.js','learning-tools.js','study-record.js','landmarks.js','coaching.js','style.css','search.css','preview.ps1','launch.cmd'):
         shutil.copy2(ROOT / 'assets/viewer' / name, out / name)
     shutil.copytree(ROOT / 'assets/vendor', out / 'vendor', dirs_exist_ok=True)
     attribution = folder.parent / 'ATTRIBUTION.md'
@@ -466,7 +506,7 @@ def validate_site(site):
             image = site / page['image']
             if not image.is_file() or hashlib.sha256(image.read_bytes()).hexdigest() != receipt.get('course_page_sha256', {}).get(page['image']):
                 raise ValueError('课件页缺失或与构建记录不一致')
-    for file in ['learning-tools.js','study-record.js','landmarks.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
+    for file in ['learning-tools.js','study-record.js','landmarks.js','coaching.js','index.html','viewer.js','style.css','vendor/three.module.js','vendor/OrbitControls.js','vendor/THREE-LICENSE.txt','ATTRIBUTION.md']:
         if not (site / file).is_file():
             raise ValueError(f'缺失页面资源：{file}')
     return {'status':'passed', 'parts':len(ids), 'steps':len(lesson['steps']), 'note':'仅验证格式、引用与几何数据，不代表医学审定'}
